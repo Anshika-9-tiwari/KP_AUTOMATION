@@ -9,16 +9,16 @@ export default function SmartFactory() {
   return (
     <>
       <PageBanner
-        title="Velocity Automation"
+        title="KP Automation"
         description="Innovating Solutions for Smart Factory"
         imageUrl="https://i.pinimg.com/736x/9a/9f/64/9a9f6496466366c5598ce482c35b9136.jpg"
       />
-      <Box sx={{ py: 10, backgroundColor: '#eef4f7' }}>
+      <Box sx={{ py: 10, backgroundColor: '#f5f5f5', color:'black' }}>
         <Container>
           <Typography variant="h4" fontWeight="bold" textAlign="center" gutterBottom>
             Smart Factory Solutions
           </Typography>
-          <Typography variant="body1" textAlign="center" maxWidth={700} mx="auto" mt={2}>
+          <Typography variant="body1" textAlign="center" maxWidth={700} mx="auto" mt={2} color='red'>
             Our smart factory solutions bring automation, analytics, and real-time monitoring to
             streamline your industrial operations. From predictive maintenance to IoT integration, we
             transform your plant into an intelligent and efficient ecosystem.
