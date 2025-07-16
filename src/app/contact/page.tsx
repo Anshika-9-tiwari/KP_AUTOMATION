@@ -123,7 +123,7 @@ export default function ContactPage() {
                   </Typography>
                 </Box>
                 <Typography sx={{ mb: 2, pl: 4, borderBottom: 1 }}>
-                  kpautomation@gmail.com
+                  kpautomation90@gmail.com
                 </Typography>
 
                 <Box display="flex" alignItems="center" mb={2}>
@@ -133,7 +133,7 @@ export default function ContactPage() {
                   </Typography>
                 </Box>
                 <Typography sx={{ mb: 2, pl: 4, borderBottom: 1 }}>
-                  +91 63972 06860
+                  +91 74648 71880 / 63972 06860
                 </Typography>
 
                 <Box display="flex" alignItems="center" mb={2}>

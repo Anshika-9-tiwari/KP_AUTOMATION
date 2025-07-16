@@ -64,7 +64,7 @@ const solutionsData = [
   {
     title: 'Quality',
     image: 'https://i.pinimg.com/736x/45/51/9f/45519fedf9dad47bbbd8f79ec518103a.jpg',
-    items: ['Computer Vision based Quality Insp..'],
+    items: ['Computer Vision based Quality.'],
   },
   {
     title: 'Security',

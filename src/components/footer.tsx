@@ -37,7 +37,7 @@ export default function Footer() {
         {/* Logo and Description */}
         <Grid item xs={12} md={3} component={'div' as any}>
           <Box display="flex" flexDirection="column" alignItems={isMobile ? 'center' : 'flex-start'}>
-            <Image src="/kpautomation.png" alt="Company Logo" width={150} height={40} />
+            <Image src="/kp_automation.png" alt="Company Logo" width={150} height={40} />
             <Typography variant="body2" sx={{ mt: 2, maxWidth: 300, lineHeight: 2 }}>
               KP Automation is a leading provider of industrial automation solutions, specializing in smart factory technologies and corporate training programs.
             </Typography>
@@ -65,10 +65,10 @@ export default function Footer() {
             Contact Us
           </Typography>
           <Typography variant="body2" sx={{ lineHeight: 2 }}>
-            <PhoneIcon fontSize="small" sx={{ mr: 1 }} /> +91 63972 06850
+            <PhoneIcon fontSize="small" sx={{ mr: 1 }} /> +91 74648 71880 / 63972 06850
           </Typography>
           <Typography variant="body2" sx={{ lineHeight: 2 }}>
-            <EmailIcon fontSize="small" sx={{ mr: 1 }} /> kpautomation@gmail.com
+            <EmailIcon fontSize="small" sx={{ mr: 1 }} /> kpautomation90@gmail.com
           </Typography>
           <Typography variant="body2" sx={{ lineHeight: 2, maxWidth: 350}}>
             <LocationOnIcon fontSize="small" sx={{ mr: 1 }} />
