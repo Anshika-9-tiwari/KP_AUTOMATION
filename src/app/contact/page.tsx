@@ -47,11 +47,7 @@ export default function ContactPage() {
 
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
-
-  // const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
-  //   setForm({ ...form, [e.target.name]: e.target.value });
  
-
   const handleChange = (
     e:
       | React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -111,17 +107,17 @@ export default function ContactPage() {
             <Card sx={{ p: 5, mb: 3 }}>
               <CardContent>
                 <Box display="flex" alignItems="center" mb={2}>
-                  <LocationOnIcon color="primary" sx={{ mr: 1 }} />
+                  <LocationOnIcon color="error" sx={{ mr: 1 }} />
                   <Typography variant="subtitle1" fontWeight="bold">
                     Address
                   </Typography>
                 </Box>
                 <Typography sx={{ mb: 2, pl: 4, borderBottom: 1 }}>
-                  Block‑C, Landmark Near Indra Park, New Delhi – 110088
+                  Block-C, Village-Salimar, Landmark Near Indra Park, New Delhi – 110088, India
                 </Typography>
 
                 <Box display="flex" alignItems="center" mb={2}>
-                  <EmailIcon color="primary" sx={{ mr: 1 }} />
+                  <EmailIcon color="success" sx={{ mr: 1 }} />
                   <Typography variant="subtitle1" fontWeight="bold">
                     Email
                   </Typography>
@@ -131,7 +127,7 @@ export default function ContactPage() {
                 </Typography>
 
                 <Box display="flex" alignItems="center" mb={2}>
-                  <PhoneIcon color="primary" sx={{ mr: 1 }} />
+                  <PhoneIcon color="error" sx={{ mr: 1 }} />
                   <Typography variant="subtitle1" fontWeight="bold">
                     Phone
                   </Typography>
@@ -141,7 +137,7 @@ export default function ContactPage() {
                 </Typography>
 
                 <Box display="flex" alignItems="center" mb={2}>
-                  <AccessTimeIcon color="primary" sx={{ mr: 1 }} />
+                  <AccessTimeIcon color="success" sx={{ mr: 1 }} />
                   <Typography variant="subtitle1" fontWeight="bold">
                     Office Hours
                   </Typography>
@@ -151,16 +147,18 @@ export default function ContactPage() {
             </Card>
 
             <Card sx={{ overflow: 'hidden', borderRadius: 3, boxShadow: 3 }}>
-              <iframe
-                title="Google Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14007.2932107754!2d77.1291838173828!3d28.71548750349674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01b1f1ec9453%3A0xf8895a9e02fd1ea0!2sIndra%20Park%2C%20Block%20C%2C%20Jahangirpuri%2C%20Delhi%2C%20110088!5e0!3m2!1sen!2sin!4v1719575800000!5m2!1sen!2sin"
-                width="100%"
-                height="250"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+              <Card sx={{ overflow: 'hidden', borderRadius: 3, boxShadow: 3 }}>
+                <iframe
+                  title="Google Map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.036964539363!2d77.17024577545907!3d28.62867188307171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfbe60d3e61df%3A0xf9eb10da4a8d3d03!2sIndra%20Park%2C%20Village%20Salimar%20Bagh%2C%20New%20Delhi%2C%20Delhi%20110088!5e0!3m2!1sen!2sin!4v1720945378456!5m2!1sen!2sin"
+                  width="100%"
+                  height="250"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </Card>
             </Card>
           </Box>
 

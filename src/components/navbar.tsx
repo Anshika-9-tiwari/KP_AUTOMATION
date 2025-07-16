@@ -10,7 +10,6 @@ import {
   Menu,
   MenuItem,
   Container,
-  Typography,
   useMediaQuery,
   useTheme,
   Collapse,
@@ -72,17 +71,6 @@ const Navbar = () => {
     { label: 'Contact', link: '/contact' }
   ];
 
-  const handleClick = (itemLabel: string) => {
-    setAnchorEls((prev) => ({
-      ...prev,
-      [itemLabel]: prev[itemLabel] ? null : document.getElementById(itemLabel),
-    }));
-  };
-
-  const handleClose = () => {
-    setAnchorEls({});
-  };
-
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
@@ -100,16 +88,16 @@ const Navbar = () => {
       sx={{
         bgcolor: '#f5f5f5',
         color: 'black',
-        boxShadow: 3,
+        boxShadow: 5,
         top: 0,
         zIndex: 1100,
       }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{ justifyContent: 'space-between' }}>
-          <Box>
+          <Box sx={{ px: 0, py: 1 }}>
             <Image
-              src="/4bg.png"
+              src="/kp_automation.png"
               alt="Logo"
               width={200}
               height={50}
@@ -128,23 +116,56 @@ const Navbar = () => {
           ) : (
             <Box sx={{ display: 'flex', gap: 1 }}>
               {navItems.map((item) => (
-                <Box key={item.label}>
+                <Box
+                  key={item.label}
+                  onMouseEnter={(e) =>
+                    item.subItems &&
+                    setAnchorEls((prev) => ({
+                      ...prev,
+                      [item.label]: e.currentTarget,
+                    }))
+                  }
+                  onMouseLeave={() =>
+                    item.subItems &&
+                    setAnchorEls((prev) => ({
+                      ...prev,
+                      [item.label]: null,
+                    }))
+                  }
+                >
                   {item.subItems ? (
                     <>
                       <Button
                         id={item.label}
-                        onClick={() => handleClick(item.label)}
                         endIcon={<ExpandMoreIcon />}
-                        sx={{ px: 2 }}
+                        sx={{ px: 2 , color:'skybule'}}
                       >
                         {item.label}
                       </Button>
                       <Menu
                         anchorEl={anchorEls[item.label]}
                         open={Boolean(anchorEls[item.label])}
-                        onClose={handleClose}
+                        onClose={() =>
+                          setAnchorEls((prev) => ({
+                            ...prev,
+                            [item.label]: null,
+                          }))
+                        }
                         anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
                         transformOrigin={{ vertical: 'top', horizontal: 'left' }}
+                        disableAutoFocusItem
+                        MenuListProps={{
+                          onMouseEnter: () =>
+                            setAnchorEls((prev) => ({
+                              ...prev,
+                              [item.label]: document.getElementById(item.label),
+                            })),
+                          onMouseLeave: () =>
+                            setAnchorEls((prev) => ({
+                              ...prev,
+                              [item.label]: null,
+                            })),
+                        }}
                         sx={{
                           '& .MuiPaper-root': {
                             minWidth: 200,
@@ -158,7 +179,12 @@ const Navbar = () => {
                             key={subItem.label}
                             component={Link}
                             href={subItem.link}
-                            onClick={handleClose}
+                            onClick={() =>
+                              setAnchorEls((prev) => ({
+                                ...prev,
+                                [item.label]: null,
+                              }))
+                            }
                           >
                             {subItem.label}
                           </MenuItem>
@@ -169,7 +195,7 @@ const Navbar = () => {
                     <Button
                       component={Link}
                       href={item.link}
-                      sx={{ px: 2 }}
+                      sx={{ px: 2, color:'black' }}
                     >
                       {item.label}
                     </Button>

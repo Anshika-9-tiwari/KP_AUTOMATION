@@ -60,7 +60,48 @@ export default function CorporateTraining() {
         description="Innovating Workforce Skills for Industrial Excellence"
         imageUrl="https://i.pinimg.com/736x/2c/44/81/2c4481633cbbd9f084aed8a50a5dc8fd.jpg"
       />
-      {/* CardSection */}
+
+      {/* CourseCardSection */}
+      <div className="max-w-8xl mx-auto px-6 md:px-12 py-16">
+        <h2 className="text-3xl font-bold text-center mb-12">Explore Our Training Modules</h2>
+
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {trainings.map((training, index) => (
+            <motion.div whileHover={{ scale: 1.01 }}>
+              <div
+                key={index}
+                className="bg-base-50 shadow-xl rounded-xl overflow-hidden hover:shadow-2xl transition duration-300"
+              >
+                <figure>
+                  <img src={training.image} alt={training.title} className="w-full h-55 object-cover" />
+                </figure>
+                <div className="p-5 space-y-3 ">
+                  <h3 className="text-xl font-semibold">{training.title}</h3>
+                  <p className="text-gray-600">{training.description}</p>
+                  <Link href={training.link}>
+                    <button className="btn btn-sm text-white bg-red-400 mt-2">
+                      Read More
+                      <ArrowForward className="text-gray-50 mt-1 cursor-pointer" />
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+      
+      {/* Contact CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <ContactComponent />
+        </motion.div>
+
+        {/* CardSection */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -95,45 +136,6 @@ export default function CorporateTraining() {
           ))}
         </div>
       </motion.div>
-
-      {/* CourseCardSection */}
-      <div className="max-w-8xl mx-auto px-6 md:px-12 py-16">
-        <h2 className="text-3xl font-bold text-center mb-12">Explore Our Training Modules</h2>
-
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {trainings.map((training, index) => (
-            <motion.div whileHover={{ scale: 1.01 }}>
-              <div
-                key={index}
-                className="bg-base-50 shadow-xl rounded-xl overflow-hidden hover:shadow-2xl transition duration-300"
-              >
-                <figure>
-                  <img src={training.image} alt={training.title} className="w-full h-55 object-cover" />
-                </figure>
-                <div className="p-5 space-y-3 ">
-                  <h3 className="text-xl font-semibold">{training.title}</h3>
-                  <p className="text-gray-600">{training.description}</p>
-                  <Link href={training.link}>
-                    <button className="btn btn-sm text-white bg-red-400 mt-2">
-                      Read More
-                      <ArrowForward className="text-gray-50 mt-1 cursor-pointer" />
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-      {/* Contact CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <ContactComponent />
-        </motion.div>
     </div>
   );
 }

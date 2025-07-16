@@ -38,6 +38,20 @@ import ContactComponent from '../app/contact/contactcomponent';
 
 const solutionsData = [
   {
+    title: 'Corporate Training',
+    image: 'https://i.pinimg.com/736x/f7/91/db/f791dbeefc2b9897b3f9e2bbc1b64fd6.jpg',
+    items: ['Drives & Motors', 'PLC Programming', 'PLC Networking', 'Servo & Motor etc..'],
+  },
+  {
+    title: 'Machine',
+    image: '/icecream-food.jpg',
+    items: [
+      'Machine Utilization & Productivity',
+      'Condition Based Monitoring',
+      'Energy Monitoring',
+    ],
+  },
+  {
     title: 'People',
     image: '/Group_Engineer.jpg',
     items: [
@@ -48,23 +62,9 @@ const solutionsData = [
     ],
   },
   {
-    title: 'Machine',
-    image: '/serviceengineer.jpg',
-    items: [
-      'Machine Utilization & Productivity',
-      'Condition Based Monitoring',
-      'Energy Monitoring',
-    ],
-  },
-  {
-    title: 'Business',
-    image: 'https://i.pinimg.com/736x/f7/91/db/f791dbeefc2b9897b3f9e2bbc1b64fd6.jpg',
-    items: ['Production Planning & Scheduling', 'Digital Assistant'],
-  },
-  {
     title: 'Quality',
     image: 'https://i.pinimg.com/736x/45/51/9f/45519fedf9dad47bbbd8f79ec518103a.jpg',
-    items: ['Computer Vision based Quality Inspection'],
+    items: ['Computer Vision based Quality Insp..'],
   },
   {
     title: 'Security',
@@ -79,26 +79,31 @@ const solutionsData = [
 ];
 
 const Solutions = () => {
-  const isTablet = useMediaQuery('(max-width:1024px)');
+  const isTabletOrBelow = useMediaQuery('(max-width:1024px)');
   const theme = useTheme();
 
   return (
     <>
+      {/* ----------------------- BANNER ----------------------- */}
       <PageBanner
-        title="Industrial Automation & Automation Services"
-        description="Innovating Solutions for Smart Industries"
+        title="Industrial Automation Training & Automation Services"
         imageUrl="https://i.pinimg.com/736x/56/d8/a1/56d8a14df98686062ee2367a10514052.jpg"
+        description={''}
       />
 
       <Box sx={{ bgcolor: 'white' }}>
-        {/* SOLUTIONS SECTION */}
-        <Box sx={{ py: 8, px: { xs: 2, sm: 4, md: 6 }, color: 'black' }}>
+        {/* -------------------  SOLUTIONS SECTION  ------------------- */}
+        <Box sx={{ py: 10, px: { xs: 2, sm: 4, md: 6 }, color: 'black' }}>
           <Container maxWidth="xl">
+            {/* main heading centred on mobile  */}
             <Typography
               variant="h4"
               fontWeight="bold"
               mb={8}
-              sx={{ fontSize: { xs: '1.75rem', md: '2.25rem' } }}
+              sx={{
+                fontSize: { xs: '1.75rem', md: '2.25rem' },
+                textAlign: { xs: 'center', md: 'left' },
+              }}
             >
               Revolutionize Digitally with Industry Solutions
             </Typography>
@@ -113,7 +118,7 @@ const Solutions = () => {
                   container
                   spacing={4}
                   alignItems="center"
-                  justifyContent="space-between"
+                  justifyContent={{ xs: 'center', md: 'space-between' }}
                   key={groupIndex}
                   sx={{ mb: { xs: 6, md: 8 } }}
                 >
@@ -123,15 +128,23 @@ const Solutions = () => {
                     const flip = isEvenRow ? isLeft : !isLeft;
 
                     return (
-                      <Grid item xs={12} sm={12} md={6} key={solution.title} component={'div' as any}>
+                      <Grid
+                        item
+                        xs={12}
+                        sm={12}
+                        md={6}
+                        key={solution.title}
+                        component={'div' as any}
+                      >
                         <Box
                           sx={{
                             display: 'flex',
-                            flexDirection: isTablet ? 'column' : flip ? 'row' : 'row-reverse',
+                            flexDirection: isTabletOrBelow ? 'column' : flip ? 'row' : 'row-reverse',
                             gap: 3,
                             alignItems: 'center',
                           }}
                         >
+                          {/* ----------------   IMAGE   ---------------- */}
                           <motion.div
                             whileHover={{ scale: 1.05 }}
                             transition={{ duration: 0.4 }}
@@ -155,19 +168,48 @@ const Solutions = () => {
                             />
                           </motion.div>
 
-                          <Box sx={{ flex: 1 }}>
+                          {/* ---------------   TEXT BLOCK   --------------- */}
+                          <Box
+                            sx={{
+                              flex: 1,
+                              textAlign: { xs: 'center', md: 'left' },
+                            }}
+                          >
                             <Typography variant="h6" fontWeight="bold" gutterBottom>
                               {solution.title}
                             </Typography>
-                            <List dense sx={{ mt: -1 }}>
+                            <List
+                              dense
+                              sx={{
+                                mt: -1,
+                                display: 'flex',
+                                flexDirection: 'column',
+                                // alignItems: { xs: 'center', md: 'flex-start' },
+                              }}
+                            >
                               {solution.items.map((text) => (
-                                <ListItem key={text} sx={{ py: { xs: 1, md: 0.4 } }}>
-                                  <ListItemIcon sx={{ minWidth: 28 }}>
+                                <ListItem
+                                  key={text}
+                                  sx={{
+                                    py: { xs: 0.5, md: 0.4 },
+                                    width: 'auto',
+                                  }}
+                                >
+                                  <ListItemIcon
+                                    sx={{
+                                      minWidth: 28,
+                                      display: 'flex',
+                                      justifyContent: 'center',
+                                    }}
+                                  >
                                     <CheckCircleIcon fontSize="small" className="text-red-400" />
                                   </ListItemIcon>
                                   <ListItemText
                                     primary={text}
-                                    primaryTypographyProps={{ fontSize: 15, lineHeight: '1' }}
+                                    primaryTypographyProps={{
+                                      fontSize: 15,
+                                      lineHeight: {xs:'0',md:'1'}
+                                    }}
                                   />
                                 </ListItem>
                               ))}
@@ -183,11 +225,23 @@ const Solutions = () => {
           </Container>
         </Box>
 
-        {/* CORPORATE TRAINING SECTION */}
-        <Box sx={{ bgcolor: '#f9f9f9', py: 8, color: 'black' }}>
+        {/* -------------------  CORPORATE TRAINING SECTION  ------------------- */}
+        <Box 
+          sx={{
+                bgcolor: '#f9f9f9', 
+                color:'black',
+                py: 7,
+                fontSize: { xs: '1.75rem', md: '2.25rem' },
+                textAlign: { xs: 'center', md: 'left' },
+              }}
+        >
           <Container sx={{ px: { xs: 2, sm: 3, md: 4 } }}>
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }}>
-              <Typography variant="h4" gutterBottom sx={{ fontSize: { xs: '1.75rem', md: '2.25rem' } }}>
+              <Typography
+                variant="h4"
+                gutterBottom
+                sx={{ fontSize: { xs: '1.75rem', md: '2.25rem' } }}
+              >
                 Corporate Training
               </Typography>
               <Typography mb={2}>
@@ -195,7 +249,7 @@ const Solutions = () => {
               </Typography>
               <Box>
                 <Link href="/corporatetraining">
-                  <Button variant="outlined" color="primary">
+                  <Button variant="outlined" color="error">
                     Explore All Training
                   </Button>
                 </Link>
@@ -222,9 +276,7 @@ const Solutions = () => {
                         <Typography variant="h6" fontWeight="bold">
                           {title}
                         </Typography>
-                        <Typography variant="body2">
-                          Brief about {title.toLowerCase()} training.
-                        </Typography>
+                        <Typography variant="body2">Brief about {title.toLowerCase()} training.</Typography>
                       </CardContent>
                     </Card>
                   </motion.div>
@@ -234,10 +286,18 @@ const Solutions = () => {
           </Container>
         </Box>
 
-        {/* SMART FACTORY SECTION */}
+        {/* -------------------  SMART FACTORY SECTION  ------------------- */}
         <Container sx={{ py: 8, color: 'black' }}>
-          <motion.div initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 1 }}>
-            <Typography variant="h4" gutterBottom sx={{ textAlign: 'center', fontSize: { xs: '1.75rem', md: '2.25rem' } }}>
+          <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <Typography
+              variant="h4"
+              gutterBottom
+              sx={{ textAlign: 'center', fontSize: { xs: '1.75rem', md: '2.25rem' } }}
+            >
               Smart Factory
             </Typography>
             <Typography mb={2} sx={{ textAlign: 'center', color: 'gray' }}>
@@ -253,19 +313,39 @@ const Solutions = () => {
           </motion.div>
         </Container>
 
-        {/* INDUSTRIES SECTION */}
+        {/* -------------------  INDUSTRIES SECTION  ------------------- */}
         <Box sx={{ bgcolor: '#f5f5f5', py: 8, color: 'black' }}>
           <Container>
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }}>
-              <Typography variant="h4" gutterBottom sx={{ fontSize: { xs: '1.75rem', md: '2.25rem' }, mb: 5 }}>
+              <Typography
+                variant="h4"
+                gutterBottom
+                sx={{ fontSize: { xs: '1.75rem', md: '2.25rem' }, mb: 5 ,textAlign: { xs: 'center', md: 'left' },}}
+              >
                 Industries We Serve
               </Typography>
               <Grid container spacing={{ xs: 3, md: 5 }} justifyContent="center">
                 {[
-                  { name: 'Warehouse & Logistics', icon: <Fastfood className="text-red-500" />, link: '/industries/warehouse-and-logistics' },
-                  { name: 'Manufacturing Industry', icon: <MedicalInformation className="text-red-500" />, link: '/industries/manufacturing' },
-                  { name: 'Food & Beverages', icon: <ElectricBolt className="text-red-500" />, link: '/industries/food-and-beverages' },
-                  { name: 'Automotive Industry', icon: <Engineering className="text-red-500" />, link: '/industries/automotive' },
+                  {
+                    name: 'Warehouse & Logistics',
+                    icon: <Fastfood className="text-red-500" />,
+                    link: '/industries/warehouse-and-logistics',
+                  },
+                  {
+                    name: 'Manufacturing Industry',
+                    icon: <MedicalInformation className="text-red-500" />,
+                    link: '/industries/manufacturing',
+                  },
+                  {
+                    name: 'Food & Beverages',
+                    icon: <ElectricBolt className="text-red-500" />,
+                    link: '/industries/food-and-beverages',
+                  },
+                  {
+                    name: 'Automotive Industry',
+                    icon: <Engineering className="text-red-500" />,
+                    link: '/industries/automotive',
+                  },
                 ].map(({ name, icon, link }) => (
                   <Grid item xs={6} sm={6} md={3} key={name} component={'div' as any}>
                     <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
@@ -289,12 +369,12 @@ const Solutions = () => {
           </Container>
         </Box>
 
-        {/* CONTACT CTA */}
-        <motion.div 
-        initial={{ opacity: 0, y: 50 }} 
-        whileInView={{ opacity: 1, y: 0 }} 
-        viewport={{ once: true }} 
-        transition={{ duration: 0.6 }}
+        {/* -------------------  CONTACT CTA  ------------------- */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
         >
           <ContactComponent />
         </motion.div>
