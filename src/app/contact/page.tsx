@@ -30,7 +30,6 @@ import {
   Message as MessageIcon,
   Person as PersonIcon,
   Phone as PhoneIcon,
-  School as SchoolIcon,
 } from '@mui/icons-material';
 
 export default function ContactPage() {
