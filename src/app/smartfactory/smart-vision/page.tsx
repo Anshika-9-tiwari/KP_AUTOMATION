@@ -32,9 +32,9 @@ const SmartVision = () => {
       ],
     },
     {
-      title: 'Anomaly Detection',
-      image: '/industry-control.jpg',
-      desc: `Our anomaly detection tools utilize advanced algorithms to sift through vast datasets, providing you with real-time alerts and actionable intelligence.`,
+      title: 'Object Segmentation',
+      image: '/object-segmentation.jpeg',
+      desc: `Revolutionize your visual understanding with our advanced object segmentation solutions. Delve into the realm of precision and detail as our cutting-edge technology seamlessly separates and identifies objects in images or videos.`,
       features: [
         'Automatic defect identification',
         'High-speed image processing',
@@ -43,10 +43,10 @@ const SmartVision = () => {
         'Live defect alerts to dashboard',
       ],
     },
-     {
-      title: 'Object Segmentation',
-      image: '/object-segmentation.jpeg',
-      desc: `Revolutionize your visual understanding with our advanced object segmentation solutions. Delve into the realm of precision and detail as our cutting-edge technology seamlessly separates and identifies objects in images or videos.`,
+    {
+      title: 'Anomaly Detection',
+      image: '/industry-control.jpg',
+      desc: `Our anomaly detection tools utilize advanced algorithms to sift through vast datasets, providing you with real-time alerts and actionable intelligence.`,
       features: [
         'Automatic defect identification',
         'High-speed image processing',

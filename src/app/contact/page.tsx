@@ -88,11 +88,11 @@ export default function ContactPage() {
       <PageBanner
         title="Contact Us"
         imageUrl="https://i.pinimg.com/736x/0f/93/4c/0f934ccb035cce852e5a27a8f4f90e4a.jpg"
-        description=""
+        description="Automate Your Career with us"
       />
 
       <Container maxWidth="xl" sx={{ py: 6, my: 6, bgcolor: 'white', color: 'black' }}>
-        <Typography variant="h4" align="center" fontWeight="bold" color="primary" gutterBottom>
+        <Typography variant="h4" align="center" fontWeight="bold" color="info" gutterBottom>
           Get in Touch With Us
         </Typography>
         <Typography variant="subtitle1" align="center" mb={4}>
@@ -122,7 +122,7 @@ export default function ContactPage() {
                   </Typography>
                 </Box>
                 <Typography sx={{ mb: 2, pl: 4, borderBottom: 1 }}>
-                  kpautomation90@gmail.com
+                  info@kpautomation.co.in
                 </Typography>
 
                 <Box display="flex" alignItems="center" mb={2}>
@@ -268,7 +268,7 @@ export default function ContactPage() {
                   fullWidth
                   sx={{ py: 1.5, fontWeight: 'bold', fontSize: '1rem', borderRadius: 2 }}
                 >
-                  {loading ? <CircularProgress size={24} color="inherit" /> : 'Send Message'}
+                  {loading ? <CircularProgress size={24} color="inherit" /> : 'Submit'}
                 </Button>
               </Stack>
             </Box>

@@ -72,7 +72,7 @@ const Industries = () => {
       <PageBanner
         title="SCADA and HMI Training"
         description='Transforming manufacturing with SCADA and HMI Industry 4.0 integration'
-        imageUrl="https://i.pinimg.com/736x/56/d8/a1/56d8a14df98686062ee2367a10514052.jpg" 
+        imageUrl="https://i.pinimg.com/736x/b4/da/4a/b4da4a733fbf0d19eca0abcdcd9b6660.jpg" 
       />
 
       <div className="px-6 md:px-16 py-12 ">

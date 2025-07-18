@@ -15,7 +15,7 @@ const Industries = () => {
   const featureData = [
     {
       title: 'Explore PLC Networking',
-      image: 'https://i.pinimg.com/736x/6a/13/be/6a13bee609d40823375309bd53f1fb53.jpg',
+      image: '/panel.jpg',
       desc: `Welcome to KP Automation, your gateway to mastering PLC (Programmable Logic Controller) Networking. In today's interconnected industrial landscape, PLC networking plays a crucial role in ensuring seamless communication and control across various automation systems`,
       extra: `Let's delve into what PLC networking entails and how our training program can empower you in this field.`,
     },
@@ -33,7 +33,7 @@ const Industries = () => {
     },
     {
       title: 'Course Content ',
-      image: '/panel.jpg',
+      image: 'https://i.pinimg.com/736x/6a/13/be/6a13bee609d40823375309bd53f1fb53.jpg',
       desc: `Fundamentals of PLC Networking , Network Design and Configuration ,  Industrial Communication Protocols ,  Troubleshooting and Maintenance. `,
       extra: `Mastering PLC networking opens up diverse career opportunities in industries such as manufacturing, process control, energy, and more.`,
     },
@@ -44,7 +44,7 @@ const Industries = () => {
       <PageBanner
         title="PLC Networking"
         description='PLC Networking involves connecting multiple PLCs or PLCs with other devices'
-        imageUrl="https://i.pinimg.com/736x/56/d8/a1/56d8a14df98686062ee2367a10514052.jpg" 
+        imageUrl="/controlpanel.jpeg" 
       />
 
       <div className="px-6 md:px-16 py-12 ">

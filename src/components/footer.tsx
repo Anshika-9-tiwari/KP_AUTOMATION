@@ -68,7 +68,7 @@ export default function Footer() {
             <PhoneIcon fontSize="small" sx={{ mr: 1 }} /> +91 74648 71880 / 63972 06850
           </Typography>
           <Typography variant="body2" sx={{ lineHeight: 2 }}>
-            <EmailIcon fontSize="small" sx={{ mr: 1 }} /> kpautomation90@gmail.com
+            <EmailIcon fontSize="small" sx={{ mr: 1 }} /> info@kpautomation.co.in
           </Typography>
           <Typography variant="body2" sx={{ lineHeight: 2, maxWidth: 350}}>
             <LocationOnIcon fontSize="small" sx={{ mr: 1 }} />
@@ -125,7 +125,7 @@ export default function Footer() {
             </IconButton>
             <IconButton
               component="a"
-              href="https://www.instagram.com/nickn4463?igsh=MWNodXU2cnV5N3NlMw=="
+              href="https://www.instagram.com/kp_automation"
               target="_blank"
               aria-label="Instagram"
               sx={{

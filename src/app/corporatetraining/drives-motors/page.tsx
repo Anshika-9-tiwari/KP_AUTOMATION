@@ -43,7 +43,7 @@ const Industries = () => {
       <PageBanner
         title="Drives & Motors Training"
         description='Transforming manufacturing with Drives and Motors integration'
-        imageUrl="https://i.pinimg.com/736x/56/d8/a1/56d8a14df98686062ee2367a10514052.jpg" 
+        imageUrl="/industry.jpg" 
       />
 
      {/* want to make this part reusable */}
@@ -97,7 +97,7 @@ const Industries = () => {
             Whether you're a recent graduate or an experienced professional, our program provides the tools and resources you need to succeed in this fast-paced industry.
           </p>
         </div>
-        <h1 className="text-3xl font-semibold text-green-600 text-center mb-10 mt-15">Why Choose KP Automation for Drives and Motors Training?!</h1>
+        <h1 className="text-3xl font-semibold text-sky-400 text-center mb-10 mt-15">Why Choose KP Automation for Drives and Motors Training?!</h1>
 
         {/* Feature Sections */}
         {featureData.map((item, i) => (

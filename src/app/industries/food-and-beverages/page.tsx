@@ -14,7 +14,7 @@ const featureData = [
   },
   {
     title: 'AI-Based Quality Inspection',
-    image: '/icecream-food.jpg',
+    image: '/food-quality.jpeg',
     desc: `AI-driven vision systems automate food quality inspection by detecting contamination, deformation, or mislabeling with high accuracy.`,
     extra: `It reduces human error, ensures consistent quality, and enhances consumer trust with real-time defect detection on production lines.`,
   },

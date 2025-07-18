@@ -138,7 +138,7 @@ const Navbar = () => {
                       <Button
                         id={item.label}
                         endIcon={<ExpandMoreIcon />}
-                        sx={{ px: 2 , color:'skybule'}}
+                        sx={{ px: 2, color: 'black' }}
                       >
                         {item.label}
                       </Button>
@@ -191,11 +191,21 @@ const Navbar = () => {
                         ))}
                       </Menu>
                     </>
+                  ) : item.label === 'Contact' ? (
+                    <Button
+                      component={Link}
+                      href={item.link}
+                      variant="contained"
+                      color="error"
+                      sx={{ px: 3, ml: 2, borderRadius: '20px', textTransform: 'none' }}
+                    >
+                      Contact
+                    </Button>
                   ) : (
                     <Button
                       component={Link}
                       href={item.link}
-                      sx={{ px: 2, color:'black' }}
+                      sx={{ px: 2, color: 'black' }}
                     >
                       {item.label}
                     </Button>
@@ -249,8 +259,16 @@ const Navbar = () => {
                   component={Link}
                   href={item.link}
                   fullWidth
+                  variant={item.label === 'Contact' ? 'contained' : 'text'}
+                  color={item.label === 'Contact' ? 'info' : 'inherit'}
                   onClick={() => setMobileOpen(false)}
-                  sx={{ justifyContent: 'flex-start', py: 1, color: 'black' }}
+                  sx={{
+                    justifyContent: 'flex-start',
+                    py: 1,
+                    color: item.label === 'Contact' ? 'white' : 'black',
+                    borderRadius: item.label === 'Contact' ? '20px' : 0,
+                    mt: item.label === 'Contact' ? 1 : 0
+                  }}
                 >
                   {item.label}
                 </Button>

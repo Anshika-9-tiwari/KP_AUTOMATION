@@ -68,7 +68,7 @@ const SmartVision = () => {
        <PageBanner
         title="PLC Training"
         description='Transforming training with PLC and Industry 4.0 integration'
-        imageUrl="https://i.pinimg.com/736x/56/d8/a1/56d8a14df98686062ee2367a10514052.jpg" 
+        imageUrl="https://i.pinimg.com/736x/60/84/1f/60841f657576f2bb9e9429a9d30e07ee.jpg" 
       />
 
       {/* CardSection */}

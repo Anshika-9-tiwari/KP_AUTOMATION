@@ -44,7 +44,7 @@ const solutionsData = [
   },
   {
     title: 'Machine',
-    image: '/icecream-food.jpg',
+    image: '/food-quality.jpeg',
     items: [
       'Machine Utilization & Productivity',
       'Condition Based Monitoring',
@@ -53,7 +53,7 @@ const solutionsData = [
   },
   {
     title: 'People',
-    image: '/Group_Engineer.jpg',
+    image: '/people.png',
     items: [
       'FR Based Attendance',
       'Field Salesforce Monitoring',
@@ -87,8 +87,8 @@ const Solutions = () => {
       {/* ----------------------- BANNER ----------------------- */}
       <PageBanner
         title="Industrial Automation Training & Automation Services"
-        imageUrl="https://i.pinimg.com/736x/56/d8/a1/56d8a14df98686062ee2367a10514052.jpg"
-        description={''}
+        imageUrl="/industrialautomation.jpeg"
+        description={'Automate Your Success'}
       />
 
       <Box sx={{ bgcolor: 'white' }}>
@@ -258,15 +258,15 @@ const Solutions = () => {
           </Container>
 
           <Container sx={{ py: 5 }}>
-            <Grid container spacing={{ xs: 3, md: 2 }} justifyContent="center">
+            <Grid container spacing={{ xs: 3, md: 3 }} justifyContent={{xs:'center'}}>
               {[
-                { title: 'PLC Networking', icon: <Hub fontSize="large" className="text-red-400" /> },
-                { title: 'PLC Training', icon: <ModelTraining fontSize="large" className="text-red-400" /> },
-                { title: 'SCADA & HMI', icon: <AutoAwesome fontSize="large" className="text-red-400" /> },
-                { title: 'Servo Motor', icon: <Business fontSize="large" className="text-red-400" /> },
+                { title: 'Industrial Automation T..', icon: <FactCheck fontSize="large" className="text-red-400" /> },
                 { title: 'Process Instrumentation', icon: <WorkspacePremium fontSize="large" className="text-red-400" /> },
-                { title: 'Industrial Automation', icon: <FactCheck fontSize="large" className="text-red-400" /> },
-                { title: 'Drives & Motors', icon: <Handyman fontSize="large" className="text-red-400" /> },
+                { title: 'Drives & Motors Training', icon: <Handyman fontSize="large" className="text-red-400" /> },
+                { title: 'PLC Networking Training .', icon: <Hub fontSize="large" className="text-red-400" /> },
+                { title: 'SCADA & HMI Training .', icon: <AutoAwesome fontSize="large" className="text-red-400" /> },
+                { title: 'Servo Motor Training .', icon: <Business fontSize="large" className="text-red-400" /> },
+                { title: 'PLC Training .', icon: <ModelTraining fontSize="large" className="text-red-400" /> },
               ].map(({ title, icon }) => (
                 <Grid item xs={12} sm={10} md={4} key={title} component={'div' as any}>
                   <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
@@ -276,7 +276,7 @@ const Solutions = () => {
                         <Typography variant="h6" fontWeight="bold">
                           {title}
                         </Typography>
-                        <Typography variant="body2">Brief about {title.toLowerCase()} training.</Typography>
+                        <Typography variant="body2">Brief about {title.toLowerCase()}.</Typography>
                       </CardContent>
                     </Card>
                   </motion.div>
@@ -337,14 +337,14 @@ const Solutions = () => {
                     link: '/industries/manufacturing',
                   },
                   {
-                    name: 'Food & Beverages',
-                    icon: <ElectricBolt className="text-red-500" />,
-                    link: '/industries/food-and-beverages',
-                  },
-                  {
                     name: 'Automotive Industry',
                     icon: <Engineering className="text-red-500" />,
                     link: '/industries/automotive',
+                  },
+                  {
+                    name: 'Food & Beverages',
+                    icon: <ElectricBolt className="text-red-500" />,
+                    link: '/industries/food-and-beverages',
                   },
                 ].map(({ name, icon, link }) => (
                   <Grid item xs={6} sm={6} md={3} key={name} component={'div' as any}>
@@ -355,7 +355,7 @@ const Solutions = () => {
                           <Typography>{name}</Typography>
                         </CardContent>
                         <Link href={link}>
-                          <button className="btn btn-sm bg-red-400 text-white mt-4">
+                          <button className="btn btn-sm bg-red-400 text-white mt-2">
                             Read More
                             <ArrowForward className="text-gray-50 mt-1 cursor-pointer" />
                           </button>

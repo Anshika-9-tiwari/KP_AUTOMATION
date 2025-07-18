@@ -63,10 +63,10 @@ export default function PeopleSolution() {
           <div className="w-full lg:w-1/2">
             <h1 className="text-3xl font-semibold text-red-400">Industry Redefined</h1>
             <p className="mt-4 text-base text-gray-700 leading-relaxed">
-            KP Automation is a leading technology company focused on delivering cutting-edge solutions and services that empower businesses to prosper in the digital era of Industry.
+              KP Automation is a leading technology company focused on delivering cutting-edge solutions and services that empower businesses to prosper in the digital era of Industry.
             </p>
             <Link href={'/industries/automotive'}>
-             <button className="btn  mt-6">Learn More</button>
+              <button className="btn  mt-6">Learn More</button>
             </Link>
           </div>
         </motion.div>
