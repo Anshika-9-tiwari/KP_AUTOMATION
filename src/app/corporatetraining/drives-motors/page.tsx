@@ -39,7 +39,7 @@ const Industries = () => {
   ];
 
   return (
-    <div className="bg-white text-gray-800">
+    <div className="bg-white text-gray-800, overflow-x-hidden">
       <PageBanner
         title="Drives & Motors Training"
         description='Transforming manufacturing with Drives and Motors integration'

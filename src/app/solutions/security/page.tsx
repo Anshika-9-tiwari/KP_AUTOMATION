@@ -41,7 +41,7 @@ const Security = () => {
   
       {/* Overview Section */}
       <motion.div 
-        className="max-w-7xl mx-auto py-10 px-0 bg-white"
+        className="max-w-7xl mx-auto py-10 px-0 bg-white overflow-x-hidden"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}

@@ -34,7 +34,7 @@ const WarehouseLogisticsPage = () => {
   ];
 
   return (
-    <div className="bg-white text-gray-800">
+    <div className="bg-white text-gray-800 overflow-x-hidden">
        <PageBanner
           title=" Warehouse & Logistics Industries"
           description='Transforming manufacturing with  Warehouse & Logistics Industries  4.0 integration'

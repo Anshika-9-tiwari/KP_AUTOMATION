@@ -68,7 +68,7 @@ const Industries = () => {
   ];
 
   return (
-    <div className="bg-white text-gray-800">
+    <div className="bg-white text-gray-800 overflow-x-hidden">
       <PageBanner
         title="SCADA and HMI Training"
         description='Transforming manufacturing with SCADA and HMI Industry 4.0 integration'

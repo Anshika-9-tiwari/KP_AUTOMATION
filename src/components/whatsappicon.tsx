@@ -5,7 +5,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 export default function WhatsappSticky() {
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-6 right-6 z-50 overflow-x-hidden">
       <Link
         href="https://wa.me/917464871880" 
         target="_blank"

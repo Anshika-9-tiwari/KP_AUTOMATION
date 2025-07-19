@@ -91,7 +91,7 @@ export default function ContactPage() {
         description="Automate Your Career with us"
       />
 
-      <Container maxWidth="xl" sx={{ py: 6, my: 6, bgcolor: 'white', color: 'black' }}>
+      <Container maxWidth="xl" sx={{ py: 6, my: 6, bgcolor: 'white', color: 'black'}}>
         <Typography variant="h4" align="center" fontWeight="bold" color="info" gutterBottom>
           Get in Touch With Us
         </Typography>

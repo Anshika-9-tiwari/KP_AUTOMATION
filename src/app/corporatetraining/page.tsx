@@ -54,7 +54,7 @@ const trainings = [
 
 export default function CorporateTraining() {
   return (
-    <div className="bg-white text-gray-800">
+    <div className="bg-white text-gray-800 overflow-x-hidden">
       <PageBanner
         title="Corporate Training Programs"
         description="Innovating Workforce Skills for Industrial Excellence"

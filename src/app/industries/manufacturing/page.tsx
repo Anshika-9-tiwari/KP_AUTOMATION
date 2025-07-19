@@ -34,7 +34,7 @@ const ManufacturingIndustry = () => {
   ];
 
   return (
-    <div className="bg-white text-gray-800">
+    <div className="bg-white text-gray-800 overflow-x-hidden">
       <PageBanner
         title="Manufacturing Industry"
         description="Transforming manufacturing with Manufacturing Industry 4.0 integration"

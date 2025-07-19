@@ -34,7 +34,7 @@ const Industries = () => {
   ];
 
   return (
-    <div className="bg-white text-gray-800">
+    <div className="bg-white text-gray-800 overflow-x-hidden">
       <PageBanner
         title="Process Instrumentation Training"
         description='Transforming manufacturing with PLC, SCADA, robotics and Industry 4.0 integration'

@@ -40,7 +40,7 @@ const Industries = () => {
   ];
 
   return (
-    <div className="bg-white text-gray-800">
+    <div className="bg-white text-gray-800 overflow-x-hidden">
       <PageBanner
         title="PLC Networking"
         description='PLC Networking involves connecting multiple PLCs or PLCs with other devices'
