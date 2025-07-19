@@ -138,7 +138,7 @@ const Navbar = () => {
                       <Button
                         id={item.label}
                         endIcon={<ExpandMoreIcon />}
-                        sx={{ px: 2, color: 'black' }}
+                        sx={{ px: 2, color: 'maroon' }}
                       >
                         {item.label}
                       </Button>

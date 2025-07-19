@@ -132,7 +132,7 @@ export default function ContactPage() {
                   </Typography>
                 </Box>
                 <Typography sx={{ mb: 2, pl: 4, borderBottom: 1 }}>
-                  +91 74648 71880 / 63972 06860
+                  +91 74648 71880 / 63972 06850
                 </Typography>
 
                 <Box display="flex" alignItems="center" mb={2}>
