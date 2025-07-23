@@ -56,6 +56,7 @@ export default function ContactPage() {
     setForm({ ...form, [name]: value });
   };
 
+  // api handler for form submission
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
@@ -277,7 +278,7 @@ export default function ContactPage() {
         </Stack>
 
         <Snackbar open={snack} autoHideDuration={3000} onClose={() => setSnack(false)}>
-          <Alert severity="success">Message sent successfully!</Alert>
+          <Alert severity="success">Form submitted successfully!</Alert>
         </Snackbar>
       </Container>
     </>
