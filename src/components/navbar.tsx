@@ -32,8 +32,8 @@ const Navbar = () => {
     {
       label: 'Solutions',
       subItems: [
-        { label: 'People', link: '/solutions/people' },
         { label: 'Quality', link: '/solutions/quality' },
+        { label: 'People', link: '/solutions/people' },
         { label: 'Security', link: '/solutions/security' },
       ]
     },
@@ -260,11 +260,12 @@ const Navbar = () => {
                   href={item.link}
                   fullWidth
                   variant={item.label === 'Contact' ? 'contained' : 'text'}
-                  color={item.label === 'Contact' ? 'info' : 'inherit'}
+                  color={item.label === 'Contact' ? 'error' : 'inherit'}
                   onClick={() => setMobileOpen(false)}
                   sx={{
                     justifyContent: 'flex-start',
                     py: 1,
+                    border:'1px solid',
                     color: item.label === 'Contact' ? 'white' : 'black',
                     borderRadius: item.label === 'Contact' ? '20px' : 0,
                     mt: item.label === 'Contact' ? 1 : 0
