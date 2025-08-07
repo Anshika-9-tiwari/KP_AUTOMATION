@@ -11,7 +11,7 @@ export default function WhatsappSticky() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div className="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition duration-300">
+        <div className="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition duration-300 animate-pulse">
           <FaWhatsapp size={28} />
         </div>
       </Link>

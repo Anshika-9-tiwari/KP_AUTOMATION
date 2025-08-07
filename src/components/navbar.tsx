@@ -18,6 +18,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Image from 'next/image';
 import Link from 'next/link';
+import HeaderTop from './headertop';
 
 const Navbar = () => {
   const theme = useTheme();
@@ -93,6 +94,8 @@ const Navbar = () => {
         zIndex: 1100,
       }}
     >
+      <HeaderTop />
+      {/* Main Navbar */}
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{ justifyContent: 'space-between' }}>
           <Box sx={{ px: 0, py: 1 }}>
