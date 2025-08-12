@@ -24,13 +24,13 @@ export default function Accordion({ title, items }: AccordionProps) {
 
   return (
     <div className="max-w-7xl mx-auto  px-6 md:px-12 py-16">
-      <h2 className="text-3xl font-semibold mb-8 text-center">{title}</h2>
+      <h2 className="text-2xl font-semibold mb-8 text-center">{title}</h2>
       <div className="join join-vertical w-full space-y-3">
         {items.map((item, index) => (
           <div key={index} className="border border-gray-300 rounded-md  bg-gray-50">
             <button
               onClick={() => toggle(index)}
-              className="w-full flex justify-between items-center p-4  text-left font-medium bg-gray-100 hover:bg-gray-200 transition"
+              className="w-full flex justify-between items-center p-4  text-left font-medium bg-gray-100 hover:bg-gray-200 transition text-gray-800"
             >
               <span>{item.question}</span>
               <FaChevronDown

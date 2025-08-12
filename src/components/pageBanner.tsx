@@ -23,7 +23,7 @@ export default function PageBanner({ title, imageUrl, description }: PageBannerP
       sx={{
         position: 'relative',
         width: '100%',
-        height: isMobile ? 200 : 450,
+        height: isMobile ? 250 : 450,
         mb: 0.5,
         borderRadius: 2,
         overflow: 'hidden',
@@ -72,7 +72,7 @@ export default function PageBanner({ title, imageUrl, description }: PageBannerP
 
           {!isContactPage && (
             <Link href="/contact" passHref>
-              <Button variant="contained" color="error" size="large">
+              <Button variant="contained" color="error" size="large" >
                 Get's More info
               </Button>
             </Link>

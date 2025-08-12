@@ -31,14 +31,6 @@ const Navbar = () => {
   const navItems = [
     { label: 'Home', link: '/' },
     {
-      label: 'Solutions',
-      subItems: [
-        { label: 'Quality', link: '/solutions/quality' },
-        { label: 'People', link: '/solutions/people' },
-        { label: 'Security', link: '/solutions/security' },
-      ]
-    },
-    {
       label: 'Corporate Training',
       subItems: [
         { label: 'All Courses', link: '/corporatetraining' },
@@ -51,15 +43,7 @@ const Navbar = () => {
         { label: 'Servo & Motor', link: '/corporatetraining/servo-motor' },
       ]
     },
-    {
-      label: 'Smart Factory',
-      subItems: [
-        { label: 'Smart Worker', link: '/smartfactory/smart-worker' },
-        { label: 'Smart Vision', link: '/smartfactory/smart-vision' },
-        { label: 'Smart Security', link: '/smartfactory/smart-security' },
-        { label: 'Smart Machine', link: '/smartfactory/smart-machine' }
-      ]
-    },
+     { label: 'Products', link: '/products' },
     {
       label: 'Industries',
       subItems: [
@@ -67,6 +51,15 @@ const Navbar = () => {
         { label: 'Manufacturing', link: '/industries/manufacturing' },
         { label: 'Food & Beverages', link: '/industries/food-and-beverages' },
         { label: 'Warehouse & Logistics', link: '/industries/warehouse-and-logistics' },
+      ]
+    },
+    {
+      label: 'Smart Factory',
+      subItems: [
+        { label: 'Smart Worker', link: '/smartfactory/smart-worker' },
+        { label: 'Smart Vision', link: '/smartfactory/smart-vision' },
+        { label: 'Smart Security', link: '/smartfactory/smart-security' },
+        { label: 'Smart Machine', link: '/smartfactory/smart-machine' }
       ]
     },
     { label: 'Contact', link: '/contact' }
@@ -102,8 +95,8 @@ const Navbar = () => {
             <Image
               src="/kp_automation.png"
               alt="Logo"
-              width={200}
-              height={50}
+              width={160}
+              height={40}
               style={{ objectFit: 'contain' }}
             />
           </Box>

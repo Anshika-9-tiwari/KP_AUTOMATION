@@ -51,8 +51,8 @@ export default function Footer() {
           </Typography>
           <Box display="flex" flexDirection="column" gap={1}>
             <Link href="/" passHref><MuiLink underline="none" color="white">Home</MuiLink></Link>
-            <Link href="/solutions/people" passHref><MuiLink underline="none" color="white">Solution</MuiLink></Link>
             <Link href="/corporatetraining" passHref><MuiLink underline="none" color="white">Corporate Training</MuiLink></Link>
+            <Link href="/products" passHref><MuiLink underline="none" color="white">Products</MuiLink></Link>
             <Link href="/smartfactory" passHref><MuiLink underline="none" color="white">Smart Factory</MuiLink></Link>
             <Link href="/industries/automotive" passHref><MuiLink underline="none" color="white">Industry</MuiLink></Link>
             <Link href="/contact" passHref><MuiLink underline="none" color="white">Contact</MuiLink></Link>

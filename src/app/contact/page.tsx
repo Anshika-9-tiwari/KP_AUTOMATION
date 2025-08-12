@@ -90,12 +90,12 @@ export default function ContactPage() {
       <PageBanner
         title="Contact Us"
         imageUrl="https://i.pinimg.com/736x/0f/93/4c/0f934ccb035cce852e5a27a8f4f90e4a.jpg"
-        description="Automate Your Career with us"
+        description="Get in touch with our automation experts. We're here to help you find the perfect solution for your industrial automation needs."
       />
 
-      <Container maxWidth="xl" sx={{ py: 6, my: 6, bgcolor: 'white', color: 'black'}}>
+      <Container maxWidth="xl" sx={{ py: 4, my: 4, bgcolor: 'white', color: 'black'}}>
         <Typography variant="h4" align="center" fontWeight="bold" color="info" gutterBottom>
-          Get in Touch With Us
+          Get in touch with our automation experts
         </Typography>
         <Typography variant="subtitle1" align="center" mb={4}>
           We’d love to hear from you! Fill out the form and we’ll get back to you shortly.

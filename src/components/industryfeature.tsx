@@ -38,9 +38,9 @@ const IndustryFeatureSection = ({ title, image, desc, extra, index }: FeaturePro
         transition={{ duration: 0.6 }}
         className="w-full md:w-1/2 space-y-4"
       >
-        <h2 className="text-2xl font-bold">{title}</h2>
-        <p>{desc}</p>
-        {extra && <p className=' italic text-sky-500'>{extra}</p>}
+        <h2 className="text-2xl text-gray-800 font-semibold">{title}</h2>
+        <p className='text-gray-800'>{desc}</p>
+        {extra && <p className=' italic text-sky-400'>{extra}</p>}
       </motion.div>
     </div>
   );

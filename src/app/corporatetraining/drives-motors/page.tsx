@@ -47,16 +47,16 @@ const Industries = () => {
       />
 
      {/* want to make this part reusable */}
-      <div className="px-6 md:px-16 py-12 ">
+      <div className="px-6 md:px-16 py-6 ">
         {/* CardSection */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
-          className="max-w-8xl mx-auto px-6 md:px-12 py-16 "
+          className="max-w-8xl mx-auto px-6 md:px-12 py-10 "
         >
-          <h1 className="text-3xl font-semibold text-red-400 text-center mb-10 ">Your Gateway to Mastering Drives and Motors in Industrial Automation!</h1>
+          <h1 className="text-3xl font-semibold text-red-400 text-center  mb-10 ">Your Gateway to Mastering Drives and Motors in Industrial Automation!</h1>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-15  ">
             {[{
               icon: <CalendarMonthIcon className="text-5xl text-red-400 mb-2" />,
@@ -85,7 +85,7 @@ const Industries = () => {
         </motion.div>
 
         {/* Overview Section */}
-        <div className="mb-12">
+        <div className="mb-12 mt-3">
           <h1 className="text-3xl font-semibold mb-4">Overview</h1>
           <p className="mb-3">
            At KP Automation, we understand the important role that Drives and Motors play in the realm of industrial automation. Our comprehensive training program is specially designed to equip individuals with the knowledge, skills, and practical experience they require to excel in this dynamic field.
