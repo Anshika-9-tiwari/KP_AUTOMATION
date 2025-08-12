@@ -189,6 +189,13 @@ const Solutions = () => {
               ))}
             </Grid>
           </Container>
+          <Box sx={{ mt: 6, textAlign: 'center' }}>
+            <Link href="/corporatetraining">
+              <Button variant="outlined" color="error" className="shadow-lg transition duration-300 animate-pulse">
+                Explore All Training
+              </Button>
+            </Link>
+          </Box>
         </Box>
 
 
