@@ -4,10 +4,6 @@ import React from 'react';
 import {
   Box,
   Typography,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
   Container,
   useMediaQuery,
   useTheme,
@@ -22,16 +18,9 @@ import PageBanner from '@/components/pageBanner';
 import IndustryFeatureSection from '@/components/industryfeature';
 
 import {
-  FactCheck,
   Hub,
   AutoAwesome,
-  WorkspacePremium,
-  MedicalInformation,
-  Engineering,
-  Fastfood,
-  ElectricBolt,
   PeopleAlt,
-  ArrowForward,
   Schema,
   Build,
 } from '@mui/icons-material';
@@ -66,7 +55,7 @@ const Solutions = () => {
         {/* -------------------  About SECTION  ------------------- */}
         <div className="px-6 md:px-16 py-14">
           <div className="mb-12">
-            <h1 className="text-4xl font-bold mb-3 text-center">Who we are</h1>
+            <h1 className="text-4xl font-bold mb-3 text-center h-">Who we are</h1>
             <Box sx={{ width: 70, height: 3, bgcolor: 'skyblue', mx: 'auto', mb: 4, borderRadius: 2 }} />
             <p className="mb-2">
               KP Automation is a leading provider of industrial automation training and solutions, equipping individuals and industries with the skills and systems they need to thrive in the era of smart manufacturing. We specialize in PLC, SCADA, HMI, drives, and complete automation services for a wide range of industries. Established with a vision to bridge the gap between industry demands and skilled professionals, KP Automation has grown into a trusted name in the field of industrial automation training and services.
@@ -192,7 +181,7 @@ const Solutions = () => {
           <Box sx={{ mt: 6, textAlign: 'center' }}>
             <Link href="/corporatetraining">
               <Button variant="outlined" color="error" className="shadow-lg transition duration-300 animate-pulse">
-                Explore All Training
+                 All Industrial Automation  Training
               </Button>
             </Link>
           </Box>
@@ -200,67 +189,7 @@ const Solutions = () => {
 
 
         {/* -------------------  OUR PRODUCTS SECTION  ------------------- */}
-        <OurProducts />
-
-        {/* -------------------  INDUSTRIES SECTION  -------------------
-        <Box sx={{ bgcolor: 'white', py: 8, color: 'black' }}>
-          <Container sx={{ px: { xs: 2, sm: 3, md: 4, textAlign:'center' } }}>
-            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }}>
-              <Typography
-                variant="h6"
-                gutterBottom
-                sx={{ fontSize: { xs: '1.75rem', md: '2.25rem'} }}
-              >
-                Industries We Serve 
-              </Typography>
-              <Typography mb={6}>
-                Comprehensive automation services tailored to your industry requirements
-              </Typography>
-            
-              <Grid container spacing={{ xs: 3, md: 5 }} justifyContent="center">
-                {[
-                  {
-                    name: 'Warehouse & Logistics',
-                    icon: <Fastfood className="text-red-500" />,
-                    link: '/industries/warehouse-and-logistics',
-                  },
-                  {
-                    name: 'Manufacturing Industry',
-                    icon: <MedicalInformation className="text-red-500" />,
-                    link: '/industries/manufacturing',
-                  },
-                  {
-                    name: 'Automotive Industry',
-                    icon: <Engineering className="text-red-500" />,
-                    link: '/industries/automotive',
-                  },
-                  {
-                    name: 'Food & Beverages',
-                    icon: <ElectricBolt className="text-red-500" />,
-                    link: '/industries/food-and-beverages',
-                  },
-                ].map(({ name, icon, link }) => (
-                  <Grid item xs={6} sm={6} md={3} key={name} component={'div' as any}>
-                    <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
-                      <Card sx={{ textAlign: 'center', py: 3, px: 2 }}>
-                        {icon}
-                        <CardContent>
-                          <Typography>{name}</Typography>
-                        </CardContent>
-                        <Link href={link}>
-                          <button className="btn btn-sm bg-red-400 text-white mt-2">
-                            Read More
-                            <ArrowForward className="text-gray-50 mt-1 cursor-pointer" />
-                          </button>
-                        </Link>
-                      </Card>
-                    </motion.div>
-                  </Grid>
-                ))}
-              </Grid>
-            </motion.div>
-          </Container>
-        </Box> */}
+         <OurProducts />
 
          {/* -------------------  SMART FACTORY SECTION  ------------------- */}
         <Box sx={{ bgcolor: '#f9f9f9', py: 8, color: 'black' }}>

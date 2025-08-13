@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.kpautomation.co.in
+
+# Sitemaps
+Sitemap: https://www.kpautomation.co.in/sitemap.xml

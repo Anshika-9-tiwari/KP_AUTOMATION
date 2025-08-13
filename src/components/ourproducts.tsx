@@ -17,7 +17,7 @@ export default function OurProducts() {
     {
       title: "Variable Frequency Drives",
       description: "High-efficiency VFDs for precise motor control, energy savings, and enhanced process performance across applications.",
-      image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      image: "https://i.pinimg.com/736x/19/fc/59/19fc5979eadbd6e5a5c2e08b53b31bd2.jpg",
       features: [
         "Energy efficient operation",
         "Programmable parameters",
