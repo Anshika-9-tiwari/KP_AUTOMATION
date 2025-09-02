@@ -44,7 +44,7 @@ const Solutions = () => {
 
   return (
     <>
-      <div className='bg-white text-gray-800 overflow-x-hidden'>
+      <div className='bg-white text-gray-800 overflow-hidden'>
         {/* ----------------------- BANNER ----------------------- */}
         <PageBanner
           title="Industrial Automation Training & Services"
@@ -60,7 +60,7 @@ const Solutions = () => {
             <p className="mb-2">
               KP Automation is a leading provider of industrial automation training and solutions, equipping individuals and industries with the skills and systems they need to thrive in the era of smart manufacturing. We specialize in PLC, SCADA, HMI, drives, and complete automation services for a wide range of industries. Established with a vision to bridge the gap between industry demands and skilled professionals, KP Automation has grown into a trusted name in the field of industrial automation training and services.
             </p>
-            <p className='text-red-500 italic'>
+            <p className='text-orange-500 italic'>
               Whether you're an engineering student, a professional seeking skill upgrades, or a business looking to automate — KP Automation is your reliable partner in industrial excellence.
               At KP Automation, we are driven by a mission to empower the industrial sector through advanced automation training and smart factory solutions.
             </p>
@@ -193,7 +193,7 @@ const Solutions = () => {
 
          {/* -------------------  SMART FACTORY SECTION  ------------------- */}
         <Box sx={{ bgcolor: '#f9f9f9', py: 8, color: 'black' }}>
-        <Container sx={{ px: { xs: 2, sm: 3, md: 4, textAlign:'center' } }}>
+        <Container sx={{ px: { xs: 2, sm: 3, md: 4 } }}>
           <motion.div
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -206,8 +206,11 @@ const Solutions = () => {
             >
               Smart Factory
             </Typography>
-            <Typography mb={2} sx={{ textAlign: 'center', color: 'gray' }}>
-              Automation and intelligent systems for manufacturing excellence using cutting-edge technologies.
+            <Box sx={{ width: 80, height: 4, bgcolor: 'skyblue', mx: 'auto', mb: 5, borderRadius: 2 }} />
+            <Typography mb={2} sx={{ color: 'gray' }}>
+              At KP Automation, our Smart Factory solutions empower industries to move towards Industry 4.0 by integrating intelligent machines, connected workers, real-time monitoring, and advanced security. From smart machines that boost productivity, to smart vision systems that ensure quality, to smart worker tools that enhance efficiency and smart security solutions that protect operations — we deliver end-to-end automation tailored to your needs. 
+              <br /> <br />
+              With cutting-edge IoT, AI, and data-driven technologies, we help businesses achieve higher efficiency, lower downtime, and improved decision-making for a truly future-ready manufacturing ecosystem. KP Automation’s Smart Factory solutions bring intelligence, connectivity, and automation together to help industries embrace Industry 4.0. 
             </Typography>
             <Box textAlign="center">
               <Link href="/smartfactory">
@@ -228,8 +231,9 @@ const Solutions = () => {
         viewport={{ once: true }}
         className="max-w-8xl mx-auto px-6 md:px-12 py-16"
       >
-        <h1 className="text-3xl font-bold text-gray-800 text-center mb-6 "> Why Choose KP Automation!</h1>
-        <h4 className='text-center mb-10'>The advantages that set us apart from the competition</h4>
+        <h1 className="text-3xl font-bold text-gray-800 text-center mb-4 "> Why Choose KP Automation!</h1>
+        <Box sx={{ width: 70, height: 3, bgcolor: 'skyblue', mx: 'auto', mb: 4, borderRadius: 2 }} />
+        <h4 className='text-center mb-14'>The advantages that set us apart from the competition</h4>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 ">
           {[{
             icon: <MdManageHistory className="text-4xl text-red-400 mb-2" />,

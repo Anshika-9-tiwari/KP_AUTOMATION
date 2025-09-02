@@ -30,7 +30,7 @@ const trainings = [
     title: 'PLC Networking',
     description: 'Understand communication between PLCs, protocols like Modbus, Profibus, and EtherNet/IP.',
     image: '/PLC_SCADA.jpeg',
-    link: '/corporatetraining/plc-networking',
+    link: '/corporatetraining/plcnetworking',
   },
   {
     title: 'Process Instrumentation',
@@ -54,7 +54,7 @@ const trainings = [
 
 export default function CorporateTraining() {
   return (
-    <div className="bg-white text-gray-800 overflow-x-hidden">
+    <div className="overflow-hidden w-full bg-white text-gray-800">
       <PageBanner
         title="Corporate Training Programs"
         description="Innovating Workforce Skills for Industrial Excellence"
@@ -62,20 +62,21 @@ export default function CorporateTraining() {
       />
 
       {/* CourseCardSection */}
-      <div className="max-w-8xl mx-auto px-6 md:px-12 py-16">
+      <div className="max-w-8xl mx-auto px-6 md:px-12 py-16 w-full">
         <h2 className="text-3xl font-bold text-center mb-12">Explore Our Training Modules</h2>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 ">
           {trainings.map((training, index) => (
-            <motion.div whileHover={{ scale: 1.01 }}>
-              <div
-                key={index}
-                className="bg-base-50 shadow-xl rounded-xl overflow-hidden hover:shadow-2xl transition duration-300"
-              >
-                <figure>
-                  <img src={training.image} alt={training.title} className="w-full h-55 object-cover" />
+            <motion.div whileHover={{ scale: 1.01 }} key={index}>
+              <div className="bg-base-50 shadow-xl rounded-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                <figure className="w-full">
+                  <img
+                    src={training.image}
+                    alt={training.title}
+                    className="w-full h-55 object-cover"
+                  />
                 </figure>
-                <div className="p-5 space-y-3 ">
+                <div className="p-5 space-y-3">
                   <h3 className="text-xl font-semibold">{training.title}</h3>
                   <p className="text-gray-600">{training.description}</p>
                   <Link href={training.link}>
@@ -90,16 +91,17 @@ export default function CorporateTraining() {
           ))}
         </div>
       </div>
-      
+
       {/* Contact CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <ContactComponent />
-        </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="w-full"
+      >
+        <ContactComponent />
+      </motion.div>
 
       {/* CardSection */}
       <motion.div
@@ -107,10 +109,12 @@ export default function CorporateTraining() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
         viewport={{ once: true }}
-        className="max-w-8xl mx-auto px-6 md:px-12 py-16"
+        className="max-w-8xl mx-auto px-6 md:px-12 py-16 w-full"
       >
-        <h1 className="text-3xl font-semibold text-red-400 text-center mb-10 ">Skill Up with Practical Learning and Personal Guidance!</h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 ">
+        <h1 className="text-3xl font-semibold text-red-400 text-center mb-10">
+          Skill Up with Practical Learning and Personal Guidance!
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[{
             icon: <MdManageHistory className="text-4xl text-red-400 mb-2" />,
             title: "Industry Relevant Skills",
@@ -126,8 +130,7 @@ export default function CorporateTraining() {
           }].map((item, i) => (
             <motion.div
               key={i}
-              //whileHover={{ scale: 1.03 }}
-              className="card bg-base-50 shadow-xl p-5 items-center text-center"
+              className="card bg-base-50 shadow-xl p-5 items-center text-center w-full"
             >
               {item.icon}
               <h3 className="font-semibold text-lg mb-1">{item.title}</h3>

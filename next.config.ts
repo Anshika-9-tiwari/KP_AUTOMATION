@@ -3,6 +3,7 @@ const nextConfig = {
   eslint: {
     // ✅ Disable ESLint errors from breaking the build on Vercel
     ignoreDuringBuilds: true,
+    output: `export`,
   },
 };
 

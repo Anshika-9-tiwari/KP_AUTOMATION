@@ -34,7 +34,7 @@ const Industries = () => {
   ];
 
   return (
-    <div className="bg-white text-gray-800 overflow-x-hidden">
+    <div className="bg-white text-gray-800 overflow-hidden">
       <PageBanner
         title="Automotive Industry"
         description="Transforming manufacturing with Automotive Industry 4.0 integration"

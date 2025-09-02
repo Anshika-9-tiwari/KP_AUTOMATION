@@ -85,6 +85,7 @@ const Navbar = () => {
         boxShadow: 5,
         top: 0,
         zIndex: 1100,
+        
       }}
     >
       <HeaderTop />
@@ -261,7 +262,6 @@ const Navbar = () => {
                   sx={{
                     justifyContent: 'flex-start',
                     py: 1,
-                    border:'1px solid',
                     color: item.label === 'Contact' ? 'white' : 'black',
                     borderRadius: item.label === 'Contact' ? '20px' : 0,
                     mt: item.label === 'Contact' ? 1 : 0

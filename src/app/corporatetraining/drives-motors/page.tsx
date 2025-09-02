@@ -77,7 +77,7 @@ const Industries = () => {
                 className="card bg-base-50 inset-shadow-sm p-5 items-center text-center "
               >
                 {item.icon}
-                <h3 className="font-semibold text-lg mb-1">{item.title}</h3>
+                <h3 className="font-semibold text-lg text-gray-800 mb-1">{item.title}</h3>
                 <p className="text-sm text-gray-600">{item.desc}</p>
               </motion.div>
             ))}
@@ -85,7 +85,7 @@ const Industries = () => {
         </motion.div>
 
         {/* Overview Section */}
-        <div className="mb-12 mt-3">
+        <div className="mb-12 mt-3 text-gray-800">
           <h1 className="text-3xl font-semibold mb-4">Overview</h1>
           <p className="mb-3">
            At KP Automation, we understand the important role that Drives and Motors play in the realm of industrial automation. Our comprehensive training program is specially designed to equip individuals with the knowledge, skills, and practical experience they require to excel in this dynamic field.

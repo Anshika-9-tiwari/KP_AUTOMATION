@@ -59,7 +59,7 @@ export default function Products() {
                   <img src={training.image} alt={training.title} className="w-full h-55 object-cover" />
                 </figure>
                 <div className="p-5 space-y-3 ">
-                  <h3 className="text-xl font-semibold">{training.title}</h3>
+                  <h3 className="text-xl font-semibold uppercase">{training.title}</h3>
                   <p className="text-gray-600">{training.description}</p>
                 </div>
               </div>

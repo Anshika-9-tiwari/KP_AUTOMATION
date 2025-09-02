@@ -34,7 +34,7 @@ const featureData = [
 
 const FoodAndBeverages = () => {
   return (
-    <div className="bg-white text-gray-800 overflow-x-hidden">
+    <div className="bg-white text-gray-800 overflow-hidden">
       <PageBanner
         title="Food and Beverages Industry"
         description='Transforming manufacturing with Food and Beverages Industry 4.0 integration'
