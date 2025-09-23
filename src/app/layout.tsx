@@ -18,8 +18,31 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "KP Automation",
-  description: "KP Automation - Industrial Automation Training and Solutions",
+  description: "KP Automation- Industrial Automation Training and Solutions",
+  icons:{
+  icon: '/kp_automation.png'
+ },
+openGraph: {
+    title: "KP Automation- Industrial Automation Experts",
+    description: "Your trusted partner for automation and training solutions.",
+    url: "https://kpautomation.co.in",
+    siteName: "Velocity Automation",
+    images: [
+      {
+        url: "https://kpautomation.co.in/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "KPAutomation",
+      },
+    ],
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
+
 
 export default function RootLayout({
   children,
