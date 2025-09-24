@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 import Navbar from '../components/navbar'; 
 import Footer from '../components/footer';
 import WhatsappSticky from "@/components/whatsappicon";
@@ -26,7 +27,7 @@ openGraph: {
     title: "KP Automation- Industrial Automation Experts",
     description: "Your trusted partner for automation and training solutions.",
     url: "https://kpautomation.co.in",
-    siteName: "Velocity Automation",
+    siteName: "KP Automation",
     images: [
       {
         url: "https://kpautomation.co.in/og-image.jpg",
@@ -57,6 +58,7 @@ export default function RootLayout({
         
         <Navbar />
         {children}
+        <Analytics/>
         <ContactSticky/>
         <WhatsappSticky />
         <Footer/>
