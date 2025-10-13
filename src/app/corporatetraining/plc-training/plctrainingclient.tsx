@@ -14,6 +14,30 @@ import HistoryToggleOffIcon from '@mui/icons-material/HistoryToggleOff';
 import Accordion from '@/components/accordion'
 import { plcItems } from '@/data/faqData';
 
+const slides = [
+  {
+    title: "PLC Training",
+    description: "Master PLC systems with hands-on automation projects.",
+    imageUrl: "https://i.pinimg.com/736x/60/84/1f/60841f657576f2bb9e9429a9d30e07ee.jpg",
+  },
+  {
+    title: "Hands-On Learning",
+    description: "Real-time industrial PLC applications.",
+    imageUrl: "https://i.pinimg.com/1200x/ee/e9/d7/eee9d7851c7a14ae8f750b1c3f490780.jpg",
+  },
+  {
+    title: "Expert Guidance",
+    description: "Train with certified automation professionals.",
+    imageUrl: "https://i.pinimg.com/1200x/27/3e/62/273e624917bde14640bae87f5f046e41.jpg",
+  },
+  {
+    title: "Industry Ready Skills",
+    description: "Build a strong foundation for automation careers.",
+    imageUrl: "https://i.pinimg.com/1200x/bb/0a/72/bb0a723660da32919ae1800a36506eb7.jpg",
+  },
+];
+
+
 const featureItem = (text: string, index: number) => (
   <li key={index} className="flex items-start gap-2 mb-2">
     <PiSealCheckBold className="text-green-500 mt-1" />
@@ -24,14 +48,14 @@ const featureItem = (text: string, index: number) => (
 const PLCTraining = () => {
   const featureData = [
     {
-      title: 'Best PLC Training Institute in Noida',
+      title: 'Benefits of Online PLC Training Institute',
       image: 'https://i.pinimg.com/736x/40/09/38/40093848efde87323245b02524d69225.jpg',
-      desc: `Get the best PLC training in Noida with hands-on experience on basic & advance systems of various PLC brands such as Siemens, Rockwell, Mitsubishi, Omron, Delta on live panels & projects and keep yourself updated on latest hardware & software as per industry requirement right here in KP Automation.`,
+      desc: `If you can’t attend classroom training, joining an online PLC training institute is a great option. This flexibility makes it easy for working professionals and students to enhance their skills without traveling. These courses often include:`,
       features: [
-        'Our top-ranked training center in PLC provides real-time, project-based instruction. ',
-        'To train the candidates, we have a team of professionals with knowledge. ',
-        'Engineering students are increasingly enrolling in PLC training',
-        'they pursue improved career prospects and ambitious future goals. ',
+        'Live classes with experts ',
+        'Recorded lectures for revision ',
+        'Access to simulation software',
+        'Certificates after completion ',
         'Given the benefits, this is a very practical training opportunity.',
       ],
     },
@@ -65,11 +89,9 @@ const PLCTraining = () => {
   return (
     <div className="bg-white text-gray-900 overflow-x-hidden">
       {/* Banner */}
-       <PageBanner
-        title="PLC Training"
-        description='Transforming training with PLC and Industry 4.0 integration'
-        imageUrl="https://i.pinimg.com/736x/60/84/1f/60841f657576f2bb9e9429a9d30e07ee.jpg" 
-      />
+       <div>
+        <PageBanner slides={slides} />
+       </div>
 
       {/* CardSection */}
         <motion.div
@@ -79,7 +101,7 @@ const PLCTraining = () => {
           viewport={{ once: true }}
           className="max-w-8xl mx-auto px-6 md:px-12 py-16 "
         >
-          <h1 className="text-3xl font-semibold text-red-400 text-center mb-10 ">Skill Up with Practical Learning and Personal Guidance!</h1>
+          <h1 className="text-3xl font-semibold text-red-400 text-center mb-10 ">Find the Best PLC Training Institute for Your Career in Industrial Automation!</h1>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-15  ">
             {[{
               icon: <CalendarMonthIcon className="text-5xl text-red-400 mb-2" />,
@@ -107,6 +129,22 @@ const PLCTraining = () => {
           </div>
         </motion.div>
 
+      {/* Overview Section */}
+        <div className="mb-12 px-6 md:px-16">
+          <h1 className="text-3xl font-bold mb-4">Overview</h1>
+          <p className="mb-4">
+            If you want to build a career in industrial automation, learning PLC programming is a must. A reliable PLC Training Institute can help you gain the skills required for industries like manufacturing, robotics, oil & gas, and process control. In this blog, we’ll guide you on how to choose the best PLC training institute—whether you’re searching for one near you or an online option.
+          </p>
+          <h1 className='text-lg font-semibold mb-2'>Why Choose a PLC Training Institute?</h1>
+          <p className='mb-2 text-sky-700'>
+            Programmable Logic Controllers (PLC) are the backbone of modern automation. A PLC Programming Course covers programming, wiring, networking, and real-time industrial applications. By enrolling in a PLC Training Institute near me, students gain both practical and theoretical knowledge to prepare for automation industry jobs.
+          </p>
+          <h1 className='text-lg font-semibold mb-2'>PLC Training Institute Near Me vs. Online PLC Training</h1>
+          <p className='mb-2 '>
+            Many learners search for a PLC training institute near me to find hands-on training in their city. On the other hand, professionals with tight schedules prefer enrolling in the <strong className='font-semibold'>best online PLC training courses</strong> to learn at their own space. Both options are effective—your choice depends on flexibility, budget, and career goals.
+          </p>
+          
+        </div>
       {/* Sections */}
       {featureData.map(({ title, image, desc, features }, i) => (
         <div key={i} className="grid md:grid-cols-2 gap-8 px-6 md:px-16 py-10 items-center">
@@ -136,6 +174,18 @@ const PLCTraining = () => {
           </motion.div>
         </div>
       ))}
+
+      {/* Overview Section */}
+        <div className="mb-12 mt-5 px-6 md:px-16">
+          <h1 className='text-lg font-semibold mb-2'>PLC Training in Noida</h1>
+          <p className='mb-3 text-sky-700'>
+            Many learners search for a PLC training institute near me to find hands-on training in their city. On the other hand, professionals with tight schedules prefer enrolling in the best online PLC training courses to learn at their own pace. Both options are effective—your choice depends on flexibility, budget, and career goals.
+          </p>
+          <h1 className='text-lg font-semibold mb-2'>Best PLC SCADA Training Institute in Delhi</h1>
+          <p className='mb-2 '>
+            For those in the capital, the <strong className='font-semibold'>best PLC SCADA training institute in Delhi provides advanced courses covering PLC, SCADA, HMI, and DCS systems.</strong> With Delhi being a central hub for education and industries, students gain excellent placement opportunities after completing their training.
+          </p>
+        </div>
 
       {/* Contact CTA */}
       <motion.div

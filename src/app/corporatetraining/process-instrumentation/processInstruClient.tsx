@@ -11,6 +11,25 @@ import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import Accordion from '@/components/accordion';
 import { instrumentationItems } from '@/data/faqData';
 
+const slides = [
+  {
+    title: "Process Instrumentation Training",
+    description: "Learn sensors, transmitters, and industrial measurement systems.",
+    imageUrl: "https://i.pinimg.com/736x/56/d8/a1/56d8a14df98686062ee2367a10514052.jpg",
+  },
+  {
+    title: "Hands-On Calibration",
+    description: "Master real-world process control instruments.",
+    imageUrl: "https://i.pinimg.com/736x/c4/7b/8d/c47b8d7c8d07baf0f804bb009005034c.jpg",
+  },
+  {
+    title: "Industrial Automation Integration",
+    description: "Connect sensors and controllers for smarter operations.",
+    imageUrl: "https://i.pinimg.com/736x/d3/14/fe/d314fec5a986beec80b279f30e193e53.jpg",
+  },
+];
+
+
 const ProcessInstrumentation = () => {
   const featureData = [
     {
@@ -35,14 +54,13 @@ const ProcessInstrumentation = () => {
 
   return (
     <div className="bg-white text-gray-800 overflow-x-hidden">
-      <PageBanner
-        title="Process Instrumentation Training"
-        description='Transforming manufacturing with PLC, SCADA, robotics and Industry 4.0 integration'
-        imageUrl="https://i.pinimg.com/736x/56/d8/a1/56d8a14df98686062ee2367a10514052.jpg" 
-      />
+      {/* Banner-section */}
+      <div>
+        <PageBanner slides={slides}/>
+      </div>
 
+      {/* CardSection */}
       <div className="px-6 md:px-16 py-12 ">
-        {/* CardSection */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

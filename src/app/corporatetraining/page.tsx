@@ -7,6 +7,30 @@ import { MdManageHistory, MdOutlineDomainDisabled, MdQueryStats } from 'react-ic
 import ContactComponent from '../contact/contactcomponent';
 import { ArrowForward } from '@mui/icons-material';
 
+const slides = [ 
+  {
+    title: "Corporate Training Programs",
+    description: "Empowering professionals with real-world automation expertise.",
+    imageUrl: "https://i.pinimg.com/736x/2c/44/81/2c4481633cbbd9f084aed8a50a5dc8fd.jpg",
+  },
+  {
+    title: "Industrial Skill Development",
+    description: "Hands-on learning for PLC, SCADA, and automation systems.",
+    imageUrl: "https://i.pinimg.com/1200x/2d/ba/05/2dba05bf87129a6df60f7a18d82a1154.jpg",
+  },
+  {
+    title: "Innovative Automation Solutions",
+    description: "Enhancing workforce efficiency with smart industrial tools.",
+    imageUrl: "https://i.pinimg.com/736x/01/08/68/01086883bf3541a11e1d28362842d7ee.jpg",
+  },
+  {
+    title: "Engineering Excellence",
+    description: "Customized corporate modules for modern manufacturing.",
+    imageUrl: "https://i.pinimg.com/1200x/1f/42/d4/1f42d427eea8c210df35ea2a6fdea790.jpg",
+  },
+];
+
+
 const trainings = [
   {
     title: 'Drives & Motors',
@@ -55,11 +79,11 @@ const trainings = [
 export default function CorporateTraining() {
   return (
     <div className="overflow-hidden w-full bg-white text-gray-800">
-      <PageBanner
-        title="Corporate Training Programs"
-        description="Innovating Workforce Skills for Industrial Excellence"
-        imageUrl="https://i.pinimg.com/736x/2c/44/81/2c4481633cbbd9f084aed8a50a5dc8fd.jpg"
-      />
+      
+      {/* banner */}
+      <div>
+        <PageBanner slides={slides}/>
+      </div>
 
       {/* CourseCardSection */}
       <div className="max-w-8xl mx-auto px-6 md:px-12 py-16 w-full">

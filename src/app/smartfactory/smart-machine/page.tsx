@@ -8,6 +8,25 @@ import ContactComponent from '../../contact/contactcomponent';
 import { PiSealCheckBold } from 'react-icons/pi';
 import PageBanner from '@/components/pageBanner';
 
+const slides = [
+  {
+    title: "Tailored Engineering Expertise",
+    description: "Customized automation solutions to maximize productivity & efficiency.",
+    imageUrl: "/industryPlant.jpg",
+  },
+  {
+    title: "Innovative Automation Solutions",
+    description: "Empowering industries with intelligent, connected, & adaptive systems.",
+    imageUrl: "/energy.webp",
+  },
+  {
+    title: "Smart Machine",
+    description: "Innovative solutions driving the Smart Factory revolution.",
+    imageUrl: "https://i.pinimg.com/736x/a0/d3/cf/a0d3cf6c661b56c511e57403f001442f.jpg",
+  },
+];
+
+
 const featureItem = (text: string, index: number) => (
   <li key={index} className="flex items-start gap-2 mb-2">
     <PiSealCheckBold className="text-green-500 mt-1" />
@@ -70,12 +89,12 @@ const SmartMachine = () => {
 
   return (
     <div className="bg-white text-gray-800 overflow-hidden">
-      <PageBanner
-        title="Smart Machine"
-        description="Transforming manufacturing with smart machine 4.0 integration"
-        imageUrl="https://i.pinimg.com/736x/a0/d3/cf/a0d3cf6c661b56c511e57403f001442f.jpg"
-      />
+      {/* banner-section */}
+      <div>
+        <PageBanner slides={slides}/>
+      </div>
 
+      {/* Card-section */}
       <SmartFactoryCard
         cardData={featureData.map(({ image, title }) => ({ image, title }))}
         pageTitle="Smart Machine Modules"

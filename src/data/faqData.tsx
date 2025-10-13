@@ -108,8 +108,20 @@ export const plcNetworkingItems = [
     extraline:'',
   },
   {
-    question: 'Which protocols are used in PLC networking?',
-    answer: 'Common protocols include Modbus, Ethernet/IP, Profibus, and Profinet.',
+    question:  'Do I need prior knowledge before joining an Industrial PLC Networking Training',
+    answer: 'Basic knowledge of PLCs and automation is recommended, but many beginner-friendly courses are available.',
+    extra:'',
+    extraline:'',
+  },
+  {
+    question:  ' How valuable is a PLC Networking Certification?',
+    answer: 'A certification adds credibility to your skills, increases employability, and helps you secure better roles in automation and industrial networking.',
+    extra:'Manufacturing, automotive, energy, oil & gas, pharmaceuticals, and smart factories are the top sectors hiring certified PLC networking experts.',
+    extraline:'',
+  },
+  {
+    question:  ' Can I take a PLC Networking Online Course while working full-time?',
+    answer: 'Yes! Online courses are designed to be flexible, allowing professionals to learn at their own pace.',
     extra:'',
     extraline:'',
   },
@@ -120,8 +132,8 @@ export const plcNetworkingItems = [
     extraline:'Our training program emphasizes hands-on learning, allowing you to gain practical experience in configuring, troubleshooting, and optimizing PLC networks.',
   },
   {
-    question: 'Who Can Take Benefit from Our Training?',
-    answer: ' Engineering students and graduates seeking to specialize in industrial automation.',
+    question: 'Who should enroll in a PLC Networking Course?',
+    answer: ' Anyone interested in industrial automation, including students, engineers, technicians, can benefit from this training.',
     extra:'Working professionals in the automation industry looking to enhance their skills and advance their careers.',
     extraline:'Technicians and engineers involved in PLC programming, maintenance, and troubleshooting.',
   },

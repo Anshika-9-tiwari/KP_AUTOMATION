@@ -10,6 +10,24 @@ import ContactComponent from '../../contact/contactcomponent'
 import { PiSealCheckBold } from 'react-icons/pi';
 import PageBanner from '@/components/pageBanner';
 
+const slides = [
+  {
+    title: "Innovative Automation Solutions",
+    description: "Empowering industries with smart, efficient automation.",
+    imageUrl: "/energy.webp",
+  },
+  {
+    title: "Smart Vision",
+    description: "TInnovating Solutions for Smart Factory",
+    imageUrl: "/object-presence.jpg",
+  },
+  {
+    title: "Tailored Engineering Expertise",
+    description: "Customized industrial automation to boost productivity.",
+    imageUrl: "/object-segmentation.jpeg",
+  },
+];
+
 const featureItem = (text: string, index: number) => (
   <li key={index} className="flex items-start gap-2 mb-2">
     <PiSealCheckBold className="text-green-500 mt-1" />
@@ -72,11 +90,9 @@ const SmartVision = () => {
   return (
     <div className="bg-white text-gray-900 overflow-hidden">
       {/* Banner */}
-       <PageBanner
-        title="Smart Vision"
-        description='Transforming manufacturing with smart vision 4.0 integration'
-        imageUrl="https://i.pinimg.com/736x/a0/d3/cf/a0d3cf6c661b56c511e57403f001442f.jpg" 
-      />
+      <div>
+        <PageBanner slides={slides}/>
+      </div>
 
       {/* Cards */}
       <SmartWorkerCard

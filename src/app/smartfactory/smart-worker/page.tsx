@@ -8,6 +8,29 @@ import { PiSealCheckBold } from 'react-icons/pi';
 import { motion } from 'framer-motion';
 import ContactComponent from '../../contact/contactcomponent';
 
+const slides = [
+  {
+    title: "Smart Worker",
+    description: "TInnovating Solutions for Smart Factory",
+    imageUrl: "https://i.pinimg.com/736x/a0/d3/cf/a0d3cf6c661b56c511e57403f001442f.jpg",
+  },
+  {
+    title: "Tailored Engineering Expertise",
+    description: "Customized industrial automation to boost productivity.",
+    imageUrl: "/feildsource.jpeg",
+  },
+    {
+    title: "Innovative Automation Solutions",
+    description: "Empowering industries with smart, efficient automation.",
+    imageUrl: "/energy.webp",
+  },
+  {
+    title: "Tailored Engineering Expertise",
+    description: "Customized industrial automation to boost productivity.",
+    imageUrl: "https://t4.ftcdn.net/jpg/05/54/46/89/360_F_554468927_iwU3VYIjsaeopAb0WPYxVf21TloEhTEj.jpg",
+  },
+];
+
 const smartWorkerCards = [
   { image: '/facial-recog.jpeg', title: 'Face Recognition' },
   { image: '/workforce-cost.jpeg', title: 'Workforce Cost Analytics' },
@@ -76,11 +99,12 @@ const featureData = [
 export default function SmartWorkerPage() {
   return (
       <>
-        <PageBanner
-          title="Smart Worker"
-          description='Transforming manufacturing with smart worker  4.0 integration'
-          imageUrl="https://i.pinimg.com/736x/a0/d3/cf/a0d3cf6c661b56c511e57403f001442f.jpg" 
-        />
+        {/* Banner-section */}
+        <div>
+          <PageBanner slides={slides}/>
+        </div>
+
+        {/* Card-section */}
         <SmartWorkerCard
           cardData={smartWorkerCards}
           pageTitle="Smart Worker Overview"

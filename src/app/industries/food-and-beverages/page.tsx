@@ -5,6 +5,30 @@ import PageBanner from '@/components/pageBanner';
 import IndustryFeatureSection from '@/components/industryfeature';
 import { motion } from 'framer-motion';
 
+const slides = [
+  {
+    title: "Food & Beverages Industry",
+    description: "Automating food production with smart, hygienic, and efficient solutions.",
+    imageUrl: "https://i.pinimg.com/736x/7e/75/59/7e75595fa40e1abb5e6bb0b7f0f638b1.jpg",
+  },
+  {
+    title: "Hygienic Process Automation",
+    description: "Ensuring quality and consistency with advanced automation systems.",
+    imageUrl: "https://i.pinimg.com/1200x/86/fd/07/86fd07014f780e609f7e440d73ffe86e.jpg",
+  },
+  {
+    title: "Smart Manufacturing Solutions",
+    description: "Improving efficiency and traceability in F&B production lines.",
+    imageUrl: "https://i.pinimg.com/1200x/f2/96/df/f296df5621b97338c03f199bb9cbc44d.jpg",
+  },
+  {
+    title: "Sustainable Engineering",
+    description: "Optimizing energy use and waste management in food processing plants.",
+    imageUrl: "https://i.pinimg.com/736x/7e/68/94/7e68943b0dd6f5b640b7c4ed126c9a89.jpg",
+  },
+];
+
+
 const featureData = [
   {
     title: 'Worker health and safety',
@@ -35,12 +59,12 @@ const featureData = [
 const FoodAndBeverages = () => {
   return (
     <div className="bg-white text-gray-800 overflow-hidden">
-      <PageBanner
-        title="Food and Beverages Industry"
-        description='Transforming manufacturing with Food and Beverages Industry 4.0 integration'
-        imageUrl="https://i.pinimg.com/736x/7e/75/59/7e75595fa40e1abb5e6bb0b7f0f638b1.jpg" 
-      />
-
+      {/* Banner-section */}
+      <div>
+        <PageBanner slides={slides}/>
+      </div>
+      
+      {/* Overview */}
       <div className="px-6 md:px-16 py-12">
         <div className="mb-12">
           <h1 className="text-3xl font-bold mb-4">Overview</h1>

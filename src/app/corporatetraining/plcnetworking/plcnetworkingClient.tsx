@@ -11,25 +11,68 @@ import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import Accordion from '@/components/accordion';
 import { plcNetworkingItems } from '@/data/faqData';
 
+const slides = [
+  {
+    title: "PLC Networking",
+    description: "Transforming manufacturing with PLC, SCADA, & robotics.",
+    imageUrl: "/controlpanel.jpeg",
+  },
+  {
+    title: "Tailored Engineering Expertise",
+    description: "Customized industrial automation to boost productivity.",
+    imageUrl: "https://i.pinimg.com/1200x/27/3e/62/273e624917bde14640bae87f5f046e41.jpg",
+  },
+];
+
 const PlCNetworking = () => {
   const featureData = [
     {
-      title: 'Explore PLC Networking',
+      title: 'What is PLC Networking?',
       image: '/panel.jpg',
-      desc: `Welcome to KP Automation, your gateway to mastering PLC (Programmable Logic Controller) Networking. In today's interconnected industrial landscape, PLC networking plays a crucial role in ensuring seamless communication and control across various automation systems`,
-      extra: `Let's delve into what PLC networking entails and how our training program can empower you in this field.`,
+      desc: `PLC Networking refers to the communication between multiple PLCs and other industrial devices such as HMIs, sensors, drives, and SCADA systems. This connectivity allows industries to monitor, control, and automate complex processes with efficiency.`,
+      extra: `Key Benefits of PLC Networking`,
+      listItems:[
+        "Seamless communication between devices",
+        "Real-time monitoring and control",
+        "Integration with SCADA, DCS, and IoT systems",
+        "Increased efficiency in industrial automation"
+      ]
     },
     {
-      title: 'Understanding PLC Networking',
+      title: 'Why Choose an Industrial PLC Networking Training?',
       image: '/PLC_SCADA.jpeg',
-      desc: `Understanding PLC networking involves the interconnection of multiple PLCs within a system or across different systems to facilitate data exchange, coordination, and control. `,
-      extra: `It enables centralized monitoring and control of complex industrial processes, improving efficiency, reliability, and scalability.`,
+      desc: `Enrolling in Industrial PLC Networking Training ensures that learners gain hands-on knowledge of protocols like Modbus, Profibus, Ethernet/IP, and Profinet. These skills are crucial for industries such as manufacturing, oil & gas, power plants, and smart factories.`,
+      extra: `Core skills you will learn:`,
+      listItems:[
+         "PLC Communication Protocols",
+         "Industrial Ethernet and Networking Concepts",
+         "Troubleshooting Communication Issues",
+         "Integration with SCADA & HMI systems",
+      ]
     },
     {
-      title: 'Importance of PLC Networking',
+      title: 'Benefits of a PLC Networking Online Course',
       image: 'https://i.pinimg.com/736x/74/1d/b1/741db1a815a41e172baa0d6c17853427.jpg',
-      desc: `PLC Networking involves connecting multiple PLCs and automation devices using industrial communication protocols like Modbus, Profibus, and Ethernet/IP.`,
-      extra: `Allows centralized monitoring and control of multiple machines.`,
+      desc: `For working professionals, flexibility matters. A PLC Networking Online Course offers the advantage of learning from anywhere at your own pace. Many online platforms also provide virtual labs and simulation software, making the training as effective as classroom sessions.`,
+      extra: `Advantages of online learning:`,
+      listItems:[
+        "Flexible schedules for working professionals",
+        "Access to recorded sessions & resources",
+        "Practical simulations and case studies",
+        "Affordable compared to offline training",
+      ]
+    },
+    {
+      title: 'Earn a PLC Networking Certification',
+      image: 'https://i.pinimg.com/736x/74/1d/b1/741db1a815a41e172baa0d6c17853427.jpg',
+      desc: `Completing a course with a PLC Networking Certification not only validates your skills but also boosts your career prospects. Certified professionals are in high demand across industries, as companies look for experts who can handle industrial networking challenges.`,
+      extra: `Career opportunities after certification:`,
+      listItems:[
+        "PLC Networking Engineer",
+        "Industrial Automation Specialist",
+        "Control Systems Engineer",
+        "SCADA & Networking Technician",
+      ]
     },
     {
       title: 'Course Content ',
@@ -41,14 +84,14 @@ const PlCNetworking = () => {
 
   return (
     <div className="bg-white text-gray-800 overflow-x-hidden">
-      <PageBanner
-        title="PLC Networking"
-        description='PLC Networking involves connecting multiple PLCs or PLCs with other devices'
-        imageUrl="/controlpanel.jpeg" 
-      />
+      
+      {/* Banner-section */}
+      <div>
+        <PageBanner slides={slides}/>
+      </div>
 
+      {/* CardSection */}
       <div className="px-6 md:px-16 py-12 ">
-        {/* CardSection */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -56,7 +99,7 @@ const PlCNetworking = () => {
           viewport={{ once: true }}
           className="max-w-8xl mx-auto px-6 md:px-12 py-16 "
         >
-          <h1 className="text-3xl font-semibold text-red-400 text-center mb-10 ">Skill Up with Practical Learning and Personal Guidance!</h1>
+          <h1 className="text-3xl font-semibold text-red-400 text-center mb-10 ">Master Your Skills with a PLC Networking Course</h1>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-15  ">
             {[{
               icon: <CalendarMonthIcon className="text-5xl text-red-400 mb-2" />,
@@ -88,13 +131,10 @@ const PlCNetworking = () => {
         <div className="mb-12">
           <h1 className="text-3xl font-bold mb-4">Overview</h1>
           <p className="mb-4">
-            PLC Networking involves connecting multiple PLCs or PLCs with other devices (like HMIs, SCADA systems, or sensors) using industrial communication protocols such as Modbus, Ethernet/IP, or Profibus. 
+            In today’s fast-growing industrial automation world, PLC Networking has become one of the most essential skills for engineers and technicians. A well-designed PLC Networking Course helps professionals understand how Programmable Logic Controllers (PLCs) communicate, integrate with SCADA systems, and support large-scale industrial processes.
           </p>
-          <p className="mb-4 text-red-400">
-            <i>This training enables professionals to design, configure, and troubleshoot networked automation systems for efficient data sharing and process coordination.</i>
-          </p>
-          <p>
-            Our solutions help manufacturers stay competitive, meet demand, and foster innovation.
+          <p className="mb-4 text-sky-700 italic">
+            If you want to upgrade your career in automation, opting for <strong>Industrial PLC Networking Training is the perfect step</strong>. Our solutions help manufacturers stay competitive, meet demand, and foster innovation.
           </p>
         </div>
 

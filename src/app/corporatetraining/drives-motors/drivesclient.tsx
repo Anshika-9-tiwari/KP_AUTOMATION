@@ -10,11 +10,19 @@ import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import Accordion from '@/components/accordion';
 import { drivesItems } from '@/data/faqData';
 
-export const metadata = {
-  title:'Drives and Motors Training | Practical Industrial Motor & Drive Courses | KP Automation',
-  description:'Join our Drives and Motors Training program to master industrial motors, variable frequency drives, and automation systems. Gain hands-on skills for career growth in electrical and mechanical industries.',
-  keyword:'Drives and Motors Training'
-}
+
+const slides = [
+  {
+    title: "Drives & Motors Training",
+    description: "Innovating Workforce Skills for Industrial Excellence",
+    imageUrl: "/industry.jpg",
+  },
+  {
+    title: "Tailored Engineering Expertise",
+    description: "Customized industrial automation to boost productivity.",
+    imageUrl: "https://i.pinimg.com/1200x/bf/f7/d7/bff7d73fdffad0aabd59054c6a4430f6.jpg",
+  },
+];
 
 const DrivesClient = () => {
 
@@ -47,11 +55,10 @@ const DrivesClient = () => {
 
   return (
     <div className="bg-white text-gray-800, overflow-x-hidden">
-      <PageBanner
-        title="Drives & Motors Training"
-        description='Transforming manufacturing with Drives and Motors integration'
-        imageUrl="/industry.jpg" 
-      />
+      {/*Banner  */}
+      <div>
+        <PageBanner slides={slides}/>
+      </div>
 
      {/* want to make this part reusable */}
       <div className="px-6 md:px-16 py-6 ">

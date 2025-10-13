@@ -12,6 +12,24 @@ import Accordion from '@/components/accordion';
 import { scadaItems } from '@/data/faqData';
 import { PiSealCheckBold } from 'react-icons/pi';
 
+const slides = [
+  {
+    title: "SCADA and HMI Training",
+    description: "Learn to monitor & control automation systems in real time.",
+    imageUrl: "https://i.pinimg.com/1200x/a2/65/78/a265786c8ebcddf374698f49fc4ea362.jpg",
+  },
+  {
+    title: "HMI Interface Design",
+    description: "Build smart, user-friendly dashboards for industrial control.",
+    imageUrl: "https://i.pinimg.com/736x/da/6c/6a/da6c6ac8a43bf851254f40e3a60af480.jpg",
+  },
+  {
+    title: "SCADA System Integration",
+    description: "Connect and manage plant operations with advanced SCADA tools.",
+    imageUrl: "https://i.pinimg.com/736x/b4/da/4a/b4da4a733fbf0d19eca0abcdcd9b6660.jpg",
+  },
+];
+
 const featureItem = (text: string, index: number) => (
   <li key={index} className="flex items-start gap-2 mb-2">
     <PiSealCheckBold className="text-green-500 mt-1" />
@@ -69,11 +87,10 @@ const ScadaHMI = () => {
 
   return (
     <div className="bg-white text-gray-800 overflow-hidden">
-      <PageBanner
-        title="SCADA and HMI Training"
-        description='Transforming manufacturing with SCADA and HMI Industry 4.0 integration'
-        imageUrl="https://i.pinimg.com/736x/b4/da/4a/b4da4a733fbf0d19eca0abcdcd9b6660.jpg" 
-      />
+      {/* Banner */}
+      <div>
+        <PageBanner slides={slides}/>
+      </div>
 
       <div className="px-6 md:px-16 py-12 ">
         {/* CardSection */}

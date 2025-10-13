@@ -5,6 +5,30 @@ import ContactComponent from '../../contact/contactcomponent';
 import IndustryFeatureSection from '@/components/industryfeature';
 import { motion } from 'framer-motion';
 
+const slides = [
+   {
+    title: "Automated Material Handling",
+    description: "Empowering industries with robotics and AI-driven systems.",
+    imageUrl: "https://i.pinimg.com/1200x/41/07/d1/4107d14494050269cae446c77384f4b8.jpg",
+  },
+  {
+    title: "Seamless Logistics Integration",
+    description: "Optimizing warehouse operations for maximum efficiency and reliability.",
+    imageUrl: "https://i.pinimg.com/736x/29/2f/8d/292f8d1366bb6d18b787e0a68ca01dbd.jpg",
+  },
+  {
+    title: "Warehouse & Logistics Industry",
+    description: "Revolutionizing supply chains with smart automation and robotics.",
+    imageUrl: "https://i.pinimg.com/736x/a7/d4/a4/a7d4a485e166fa7b5047746d7419341d.jpg",
+  },
+  {
+    title: "Smart Warehouse Management",
+    description: "Enhancing speed, accuracy, and visibility across logistics operations.",
+    imageUrl: "https://third-eye.ai/wp-content/uploads/2023/10/warehouse-workers-discussing-about-logistics-distribution-packages-market-1-scaled-e1700196681425.webp",
+  },
+];
+
+
 const WarehouseLogisticsPage = () => {
   const featureData = [
     {
@@ -35,11 +59,12 @@ const WarehouseLogisticsPage = () => {
 
   return (
     <div className="bg-white text-gray-800 overflow-hidden">
-       <PageBanner
-          title=" Warehouse & Logistics Industries"
-          description='Transforming manufacturing with  Warehouse & Logistics Industries  4.0 integration'
-          imageUrl="https://i.pinimg.com/736x/a7/d4/a4/a7d4a485e166fa7b5047746d7419341d.jpg" 
-        />
+        {/* Banner-section */}
+        <div>
+          <PageBanner slides={slides}/>
+        </div>
+
+        {/* Overview */}
         <div className="px-6 md:px-16 py-12">
           <div className="mb-12">
             <h1 className="text-3xl font-bold mb-4">Overview</h1>

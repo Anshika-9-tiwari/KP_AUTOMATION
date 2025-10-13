@@ -1,33 +1,33 @@
 'use client';
 
 import Link from 'next/link';
-import { FaEnvelope, FaPhone, FaLinkedin, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { FaEnvelope, FaPhoneAlt, FaLinkedin, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 export default function HeaderTop() {
   return (
-    <div className="w-full bg-gradient-to-r from-black via-red-600 to-gray-800 text-white text-sm px-4 py-1 flex flex-col md:flex-row justify-between items-center ">
+    <div className="w-full bg-gradient-to-r from-gray-800 via-red-700 to-gray-800 text-white text-sm px-4 py-2.5 md:py-4 flex flex-col md:flex-row justify-between items-center ">
         {/* Left: Email and Phone */}
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-6">
           <div className="flex items-center gap-2">
-            <FaEnvelope className="text-primary" />
-            <a href="mailto:info@kpautomation.co.in" className="hover:underline">info@kpautomation.co.in</a>
+            <FaEnvelope className="text-primary text-sm md:text-lg" />
+            <a href="mailto:info@kpautomation.co.in" className="hover:underline text-md md:text-lg">info@kpautomation.co.in</a>
           </div>
           <div className="flex items-center gap-2">
-            <FaPhone className="text-primary" />
-            <a href="tel:+6397206850" className="hover:underline">+9163972 06850</a>
+            <FaPhoneAlt className="text-primary text-sm md:text-lg" />
+            <a href="tel:+6397206850" className="hover:underline text-md md:text-lg">+9163972 06850</a>
           </div>
         </div>
 
         {/* right Links */}
         <div className="hidden md:flex items-center gap-4 mt-2 md:mt-0 transition duration-300 animate-pulse">
           <Link href="https://www.linkedin.com/in/nikki-rajput-49b709286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="hover:text-primary">
-            <FaLinkedin size={18} />
+            <FaLinkedin size={25} />
           </Link>
           <Link href="https://wa.me/916397206850" className="hover:text-primary">
-            <FaWhatsapp size={18} />
+            <FaWhatsapp size={25} />
           </Link>
           <Link href="https://www.instagram.com/kp_automation" className="hover:text-primary">
-            <FaInstagram size={18} />
+            <FaInstagram size={25} />
           </Link>
         </div>
       </div>

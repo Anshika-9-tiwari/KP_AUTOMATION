@@ -92,14 +92,16 @@ const Navbar = () => {
       {/* Main Navbar */}
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{ justifyContent: 'space-between' }}>
-          <Box sx={{ px: 0, py: 1 }}>
-            <Image
+          <Box sx={{ px: 0, py: 1.2 }}>
+           <a href="/">
+             <Image
               src="/kp_automation.png"
               alt="Logo"
-              width={160}
+              width={170}
               height={40}
               style={{ objectFit: 'contain' }}
             />
+           </a>
           </Box>
 
           {isMobile ? (

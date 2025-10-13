@@ -5,6 +5,30 @@ import ContactComponent from '../../contact/contactcomponent';
 import IndustryFeatureSection from '@/components/industryfeature'; 
 import { motion } from 'framer-motion';
 
+const slides = [
+  {
+    title: "Automotive Industry",
+    description: "Driving efficiency through smart automation and Industry 4.0 integration.",
+    imageUrl: "https://i.pinimg.com/736x/97/6a/4d/976a4d0522e07697ab5b0afed2752f67.jpg",
+  },
+  {
+    title: "Advanced Manufacturing Systems",
+    description: "Enhancing automotive production lines with cutting-edge automation.",
+    imageUrl: "/energy.webp",
+  },
+  {
+    title: "Innovative Automation Solutions",
+    description: "Boosting performance, precision, and productivity in automotive plants.",
+    imageUrl: "https://i.pinimg.com/736x/e5/a8/14/e5a814a6a55aafb33ee1c1f17583ef62.jpg",
+  },
+  {
+    title: "Engineering Excellence",
+    description: "Delivering customized solutions for automotive process optimization.",
+    imageUrl: "https://t4.ftcdn.net/jpg/05/54/46/89/360_F_554468927_iwU3VYIjsaeopAb0WPYxVf21TloEhTEj.jpg",
+  },
+];
+
+
 const Industries = () => {
   const featureData = [
     {
@@ -35,14 +59,13 @@ const Industries = () => {
 
   return (
     <div className="bg-white text-gray-800 overflow-hidden">
-      <PageBanner
-        title="Automotive Industry"
-        description="Transforming manufacturing with Automotive Industry 4.0 integration"
-        imageUrl="https://i.pinimg.com/736x/97/6a/4d/976a4d0522e07697ab5b0afed2752f67.jpg"
-      />
+      {/* Banner-section */}
+      <div>
+        <PageBanner slides={slides}/>
+      </div>
 
+      {/* Overview Section */}
       <div className="px-6 md:px-16 py-12">
-        {/* Overview Section */}
         <div className="mb-12">
           <h1 className="text-3xl font-bold mb-4">Overview</h1>
           <p className="mb-4">

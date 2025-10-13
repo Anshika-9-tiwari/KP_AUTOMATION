@@ -6,6 +6,30 @@ import { motion } from 'framer-motion';
 import ContactComponent from '../contact/contactcomponent';
 import { ArrowForward } from '@mui/icons-material';
 
+const slides = [
+  {
+    title: "All Products",
+    description: "Siemens, Delta, HMI, VFD & Control Panels — complete automation solutions.",
+    imageUrl: "https://atechnology.in/wp-content/uploads/2023/04/plc-1.jpg",
+  },
+  {
+    title: "Control Panels",
+    description: "Engineered for reliability, & high-performance automation systems.",
+    imageUrl: "https://i.pinimg.com/736x/1e/6c/7d/1e6c7d7cef88aa7b890fce0bb896bcff.jpg",
+  },
+  {
+    title: "HMI & SCADA",
+    description: "Seamless control & monitoring with cutting-edge HMI & SCADA.",
+    imageUrl: "https://i.pinimg.com/1200x/fd/a9/0a/fda90aac94fdfbe324981be1bc476b55.jpg",
+  },
+  {
+    title: "Variable Frequency Drives (VFD)",
+    description: "Efficient motor control with advanced VFD systems.",
+    imageUrl: "https://i.pinimg.com/736x/19/fc/59/19fc5979eadbd6e5a5c2e08b53b31bd2.jpg",
+  },
+];
+
+
 const products = [
   {
     title: 'Siemens',
@@ -38,11 +62,10 @@ const products = [
 export default function Products() {
   return (
     <div className="bg-white text-gray-800">
-      <PageBanner
-        title="All Products"
-        description="Siemens , Delta & HMI , VFD & Control Panel"
-        imageUrl="https://atechnology.in/wp-content/uploads/2023/04/plc-1.jpg"
-      />
+      {/* Banner-section */}
+      <div>
+        <PageBanner slides={slides}/>
+      </div>
 
       {/* CourseCardSection */}
       <div className="max-w-8xl mx-auto px-6 md:px-12 py-18">

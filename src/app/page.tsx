@@ -16,7 +16,6 @@ import Grid from '@mui/material/Grid';
 import { motion } from 'framer-motion';
 import PageBanner from '@/components/pageBanner';
 import IndustryFeatureSection from '@/components/industryfeature';
-
 import {
   Hub,
   AutoAwesome,
@@ -28,6 +27,29 @@ import ContactComponent from '../app/contact/contactcomponent';
 import { MdManageHistory, MdQueryStats } from 'react-icons/md';
 import AddTaskIcon from '@mui/icons-material/AddTask';
 import OurProducts from '@/components/ourproducts';
+
+const slides = [
+    {
+      title: "Industrial Automation Training & Services",
+      description: "Empowering industries with smart, efficient automation.",
+      imageUrl: "/industrialautomation.jpeg",
+    },
+    {
+      title: "Tailored Engineering Expertise",
+      description: "Customized industrial automation to boost productivity.",
+      imageUrl: "/industry.jpg",
+    },
+     {
+      title: "Innovative Automation Solutions",
+      description: "Empowering industries with smart, efficient automation.",
+      imageUrl: "/industryPlant.jpg",
+    },
+    {
+      title: "Tailored Engineering Expertise",
+      description: "Customized industrial automation to boost productivity.",
+      imageUrl: "Foodbeverages.jpeg",
+    },
+  ];
 
 const featureData = [
   {
@@ -46,11 +68,9 @@ const Solutions = () => {
     <>
       <div className='bg-white text-gray-800 overflow-hidden'>
         {/* ----------------------- BANNER ----------------------- */}
-        <PageBanner
-          title="Industrial Automation Training & Services"
-          imageUrl="/industrialautomation.jpeg"
-          description={'Automate Your Success'}
-        />
+        <div>
+          <PageBanner slides={slides}/>
+        </div>
 
         {/* -------------------  About SECTION  ------------------- */}
         <div className="px-6 md:px-16 py-14">

@@ -10,6 +10,25 @@ import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import Accordion from '@/components/accordion';
 import { servoItems } from '@/data/faqData';
 
+const slides = [
+  {
+    title: "Servo Motor Training",
+    description: "Master precise motion control for industrial automation.",
+    imageUrl: "https://i.pinimg.com/736x/56/d8/a1/56d8a14df98686062ee2367a10514052.jpg",
+  },
+  {
+    title: "Advanced Servo Systems",
+    description: "Learn tuning, configuration, and control of servo drives.",
+    imageUrl: "https://i.pinimg.com/1200x/bb/0a/72/bb0a723660da32919ae1800a36506eb7.jpg",
+  },
+  {
+    title: "Automation Efficiency",
+    description: "Enhance performance with servo-integrated automation.",
+    imageUrl: "https://t4.ftcdn.net/jpg/05/54/46/89/360_F_554468927_iwU3VYIjsaeopAb0WPYxVf21TloEhTEj.jpg",
+  },
+];
+
+
 const ServoMotor = () => {
   const featureData = [
     {
@@ -46,14 +65,13 @@ const ServoMotor = () => {
 
   return (
     <div className="bg-white text-gray-800 overflow-hidden">
-        <PageBanner
-          title="Servo Motor Training"
-          description='Transforming manufacturing with PLC, SCADA, robotics and Industry 4.0 integration'
-          imageUrl="https://i.pinimg.com/736x/56/d8/a1/56d8a14df98686062ee2367a10514052.jpg" 
-        />  
+      {/*Banner*/}
+      <div>
+        <PageBanner slides={slides}/>
+      </div>
 
+      {/* CardSection */}
       <div className="px-6 md:px-16 py-12 ">
-        {/* CardSection */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
