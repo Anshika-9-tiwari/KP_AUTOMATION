@@ -1,5 +1,74 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+
+/* ===========================
+   KP Automation Theme
+=========================== */
+
+:root {
+  --primary: #FF3131;
+  --primary-hover: #E12727;
+
+  --background: #FFFFFF;
+  --surface: #F8F9FB;
+  --surface-2: #FFFFFF;
+
+  --heading: #111827;
+  --text: #4B5563;
+
+  --border: #E5E7EB;
+
+  --success: #22C55E;
+}
+
+@plugin "daisyui/theme" {
+  name: "kpautomation";
+  default: true;
+  prefersdark: false;
+
+  --color-primary: var(--primary);
+  --color-primary-content: #ffffff;
+
+  --color-secondary: var(--surface);
+
+  --color-accent: var(--primary);
+
+  --color-neutral: var(--heading);
+  --color-neutral-content: #ffffff;
+
+  --color-base-100: var(--background);
+  --color-base-200: var(--surface);
+  --color-base-300: var(--border);
+
+  --color-info: #3abff8;
+  --color-success: var(--success);
+  --color-warning: #fbbd23;
+  --color-error: #f87272;
+}
+
 body {
-  overflow-x: hidden;
+  background: var(--background);
+  color: var(--text);
+}
+
+/* React Slick */
+
+.slick-dots {
+  bottom: -50px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: var(--primary);
+  opacity: 0.3;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--primary);
+  opacity: 1;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
 }
