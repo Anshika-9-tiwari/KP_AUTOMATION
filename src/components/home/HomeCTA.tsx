@@ -11,7 +11,7 @@ import SecondaryButton from "@/components/common/SecondaryButton";
 
 export default function HomeCTA() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-primary to-[#E12727] py-20">
+    <section className="relative overflow-hidden bg-gradient-to-b from-primary to-[#E12727] py-18">
       {/* Background Pattern */}
        <div className="absolute inset-0 bg-black/25" />
 
@@ -24,11 +24,11 @@ export default function HomeCTA() {
 
         <div className="mx-auto max-w-4xl text-center text-white">
 
-          <div className="badge badge-outline border-white/40 bg-white/10 px-5 py-4 text-white">
+          <div className="badge badge-outline border border-white/20 bg-white/10 px-5 py-4 text-white">
             Ready to Get Started?
           </div>
 
-          <h2 className="mt-6 font-serif text-4xl font-bold leading-tight lg:text-6xl">
+          <h2 className="mt-6 font-serif text-4xl font-bold leading-tight lg:text-[54px]">
             Let's Build Smarter
             <br />
             Automation Solutions
@@ -48,8 +48,6 @@ export default function HomeCTA() {
             >
               Get Free Consultation
 
-              <ArrowRight size={18} />
-
             </PrimaryButton>
 
             <SecondaryButton
@@ -61,7 +59,7 @@ export default function HomeCTA() {
 
           </div>
 
-          <div className="mt-12 inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-6 py-3 backdrop-blur">
+          {/* <div className="mt-12 inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-6 py-3 backdrop-blur">
 
             <PhoneCall size={18} />
 
@@ -69,7 +67,7 @@ export default function HomeCTA() {
               <a href="tel:+916397206850" className="text-white "> Need Immediate Assistance? Call Us Today</a>
             </span>
 
-          </div>
+          </div> */}
 
         </div>
 
