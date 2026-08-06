@@ -16,7 +16,7 @@ const highlights = [
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[720px] lg:min-h-[680px] flex items-center overflow-hidden py-16 lg:py-18">
+    <section className="relative min-h-[720px] lg:min-h-[680px] flex items-center overflow-hidden py-16 lg:py-16">
   
       {/* Background Video */}
 
@@ -46,23 +46,23 @@ export default function Hero() {
 
             {/* Badge */}
 
-            <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-5 py-2 backdrop-blur-md">
-              <BadgeCheck size={18} className="text-primary" />
+            <div className="inline-flex items-center gap-2 rounded-full text-white/80 border border-primary/30 bg-primary/10 px-5 py-2 backdrop-blur-md">
+              <BadgeCheck size={16} className="text-primary" />
 
-              <span className="text-sm font-medium">
+              <span className="text-xs font-medium">
                 Trusted Industrial Automation Partner
               </span>
             </div>
 
             {/* Heading */}
 
-            <h1 className="max-w-3xl font-serif text-5xl font-semibold leading-[1.09] tracking-tight lg:text-7xl">
+            <h1 className="max-w-3xl font-serif text-5xl font-bold leading-[1.09] tracking-tight lg:text-6xl">
               Industrial Automation
               <span className="block">
                 That Drives Growth
               </span>
             </h1>
-
+ 
             {/* Description */}
 
             <p className="max-w-2xl text-lg leading-8 text-white/80">

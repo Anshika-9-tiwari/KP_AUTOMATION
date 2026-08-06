@@ -32,7 +32,7 @@ export default function Navbar() {
       }`}
     >
       <Container>
-        <div className="navbar h-24 px-0">
+        <div className="navbar h-20 px-0">
 
           <div className="navbar-start">
 
@@ -43,7 +43,7 @@ export default function Navbar() {
                 width={220}
                 height={70}
                 priority
-                className="h-16 w-auto object-contain"
+                className="h-15 w-auto object-contain"
               />
             </Link>
 
