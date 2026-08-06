@@ -22,8 +22,8 @@ export default function Industries() {
 
           {industries.map((industry) => (
             <IndustryCard
-              key={industry.title}
-              {...industry}            />
+              href={""} key={industry.title}
+              {...industry}/>
           ))}
 
         </div>
