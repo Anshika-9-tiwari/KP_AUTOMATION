@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import PageBanner from '@/components/pageBanner';
 import { motion } from 'framer-motion';
 import ContactComponent from '../contact/contactcomponent';
 import { ArrowForward } from '@mui/icons-material';
@@ -62,10 +61,6 @@ const products = [
 export default function Products() {
   return (
     <div className="bg-white text-gray-800">
-      {/* Banner-section */}
-      <div>
-        <PageBanner slides={slides}/>
-      </div>
 
       {/* CourseCardSection */}
       <div className="max-w-8xl mx-auto px-6 md:px-12 py-18">

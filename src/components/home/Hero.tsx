@@ -33,7 +33,7 @@ export default function Hero() {
 
       {/* Overlay */}
 
-      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/35" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-black/35" />
 
       {/* Additional Left Overlay */}
       {/* <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/60 to-black/40" /> */}

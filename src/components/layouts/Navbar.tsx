@@ -25,7 +25,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 py-0.5 ${
         isScrolled
           ? "bg-white/95 backdrop-blur-xl shadow-lg shadow-black/5"
           : "bg-transparent"
@@ -43,7 +43,7 @@ export default function Navbar() {
                 width={220}
                 height={70}
                 priority
-                className="h-15 w-auto object-contain"
+                className="h-14 w-auto object-contain"
               />
             </Link>
 

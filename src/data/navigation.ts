@@ -26,15 +26,15 @@ export const navigation: NavItem[] = [
     children: [
       {
         label: "PLC Training",
-        href: "/corporate-training/plc",
+        href: "/corporate-training/plc-training",
       },
       {
         label: "SCADA & HMI",
-        href: "/corporate-training/scada-hmi",
+        href: "/corporate-training/scada-and-hmi",
       },
       {
-        label: "Servo",
-        href: "/corporate-training/servo",
+        label: "Servo Motor",
+        href: "/corporate-training/servo-motor",
       },
       {
         label: "Instrumentation",
@@ -64,11 +64,11 @@ export const navigation: NavItem[] = [
       },
       {
         label: "Food & Beverage",
-        href: "/industries/food",
+        href: "/industries/food-and-beverage",
       },
       {
-        label: "Water",
-        href: "/industries/water",
+        label: "Water Management",
+        href: "/industries/water-management",
       },
       {
         label: "Oil & Gas",
@@ -89,8 +89,8 @@ export const navigation: NavItem[] = [
         href: "/products/plc",
       },
       {
-        label: "HMI",
-        href: "/products/hmi",
+        label: "Scada & HMI",
+        href: "/products/scada-hmi",
       },
       {
         label: "VFD",
@@ -101,12 +101,12 @@ export const navigation: NavItem[] = [
         href: "/products/sensors",
       },
       {
-        label: "Panels",
-        href: "/products/panels",
+        label: "Contorl Panels",
+        href: "/products/control-panels",
       },
       {
-        label: "Relays",
-        href: "/products/relays",
+        label: "IOT Devices",
+        href: "/products/iot-devices",
       },
     ],
   },

@@ -1,3 +1,5 @@
+"use client";
+
 import Container from "@/components/common/Container";
 import SectionHeader from "@/components/common/SectionHeader";
 
@@ -15,7 +17,7 @@ export default function Services() {
           description="From PLC programming and SCADA systems to Industry 4.0 implementation, we deliver complete industrial automation solutions for modern manufacturing."
         />
 
-        <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-15 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {services.map((service, index) => (
             <ServiceCard
               key={service.title}

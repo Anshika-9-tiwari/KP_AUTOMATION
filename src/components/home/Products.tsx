@@ -1,3 +1,5 @@
+"use client";
+
 import Container from "@/components/common/Container";
 import SectionHeader from "@/components/common/SectionHeader";
 
@@ -17,7 +19,7 @@ export default function Products() {
           description="We supply genuine industrial automation products from leading global brands, backed by expert technical support and integration services."
         />
 
-        <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-15 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {products.map((product) => (
             <ProductCard
               key={product.title}

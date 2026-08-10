@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import {
   Award,
   Factory,
@@ -27,16 +26,16 @@ const features = [
       "Skilled automation experts with years of industrial experience.",
   },
   {
-    icon: Factory,
-    title: "Complete Automation Solutions",
-    description:
-      "PLC, SCADA, HMI, Robotics, Panels and IIoT under one roof.",
-  },
-  {
     icon: TimerReset,
     title: "On-Time Delivery",
     description:
       "Efficient execution with timely project completion.",
+  },
+  {
+    icon: Factory,
+    title: "Complete Automation Solutions",
+    description:
+      "PLC, SCADA, HMI, Robotics, Panels and IIoT under one roof.",
   },
   {
     icon: ShieldCheck,

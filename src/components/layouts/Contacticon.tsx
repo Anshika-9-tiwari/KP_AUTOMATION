@@ -7,7 +7,7 @@ export default function ContactSticky() {
   return (
     <div className="fixed bottom-4 left-6 z-50">
       <Link href="tel:+916397206850" passHref>
-        <div className="bg-blue-500 hover:bg-blue-600 text-white rounded-full p-4 shadow-lg transition duration-300 animate-pulse">
+        <div className="bg-[#ff3131] hover:bg-blue-600 text-white rounded-full p-4 shadow-lg transition duration-300 animate-pulse">
           <CallIcon style={{ fontSize: 24 }}/>
         </div>
       </Link>

@@ -16,7 +16,7 @@ const quickLinks = [
   { label: "About Us", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Products", href: "/products" },
-  { label: "Industries", href: "/industries" },
+  { label: "Industries", href: "#industries" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -79,8 +79,7 @@ export default function Footer() {
             <div className="mt-8 flex gap-4">
 
               <Link
-                href="https://www.linkedin.com/"
-                target="_blank"
+                href="https://www.linkedin.com/in/nikkirajput/" target="_blank" rel="noopener noreferrer"
                 className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 transition hover:border-primary hover:bg-primary"
               >
                 <FaLinkedin size={18} />
@@ -89,6 +88,7 @@ export default function Footer() {
               <Link
                 href="https://wa.me/916397206850"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 transition hover:border-primary hover:bg-primary"
               >
                 <FaWhatsapp size={18} />
@@ -97,6 +97,7 @@ export default function Footer() {
               <Link
                 href="https://instagram.com/kp_automation"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 transition hover:border-primary hover:bg-primary"
               >
                 <FaInstagram size={18} />

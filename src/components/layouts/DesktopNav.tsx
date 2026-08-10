@@ -65,13 +65,13 @@ export default function DesktopNav({
 
                 <ul
                   tabIndex={0}
-                  className="dropdown-content menu mt-4 w-64 rounded-2xl border border-base-300 bg-white p-2 shadow-xl"
+                  className="dropdown-content menu mt-4 w-60 rounded-2xl border border-base-300 bg-white p-2 shadow-xl"
                 >
                   {item.children.map((child) => (
                     <li key={child.label}>
                       <Link
                         href={child.href}
-                        className={`rounded-xl py-3 transition-all duration-200 ${
+                        className={`rounded-xl py-2 transition-all duration-200 ${
                           pathname === child.href
                             ? "bg-primary text-white"
                             : "hover:bg-primary/10 hover:text-primary"

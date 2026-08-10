@@ -45,9 +45,10 @@ export default function Testimonials() {
       <Container>
         <SectionHeader
           badge="Testimonials"
-          title="What Our Clients"
-          highlight="Say About Us"
+          title="What Our Clients Say"
+          highlight=" About Us"
           description="Trusted by manufacturing industries and engineering teams for delivering reliable automation solutions and practical industrial training."
+          className="mb-12"
         />
 
         {/* Tabs */}

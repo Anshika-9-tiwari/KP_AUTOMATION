@@ -15,7 +15,7 @@ export const products = [
     icon: Cpu,
   },
   {
-    title: "HMI",
+    title: "HMI & Scada",
     brand: "Weintek • Siemens",
     image: "/aumation/hmi.jpg",
     icon: Monitor,
@@ -39,7 +39,7 @@ export const products = [
     icon: PanelTop,
   },
   {
-    title: "Relays",
+    title: "IOT Devices",
     brand: "Schneider • Omron",
     image: "/feildsource.jpeg",
     icon: Zap,

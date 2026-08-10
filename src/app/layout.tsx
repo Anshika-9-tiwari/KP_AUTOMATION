@@ -6,10 +6,10 @@ import { Analytics } from "@vercel/analytics/next"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import WhatsappSticky from "@/components/whatsappicon";
-import ContactSticky from "@/components/contacticon";
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
+import ContactSticky from "@/components/layouts/Contacticon";
+import WhatsappSticky from "@/components/layouts/Whatsappicon";
 
 
 const geistSans = Geist({

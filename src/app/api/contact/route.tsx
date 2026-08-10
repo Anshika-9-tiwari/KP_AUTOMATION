@@ -1,86 +1,175 @@
-// src/app/api/contact/route.ts
+import { NextResponse } from "next/server";
+import nodemailer from "nodemailer";
 
-import { PrismaClient } from '@prisma/client';
-import { Resend } from 'resend';
-import { NextRequest } from 'next/server';
+import { contactSchema } from "@/lib/validations/ContactSchema";
 
-const prisma = new PrismaClient();
-const resend = new Resend(process.env.RESEND_API_KEY);
-
-export async function POST(req: NextRequest) {
+export async function POST(request: Request) {
   try {
-    const body = await req.json();
+    const body = await request.json();
 
-    const {
-      first_name,
-      last_name,
-      email_id,
-      phone_no,
-      course_name,
-      message
-    } = body;
+    const result = contactSchema.safeParse(body);
 
-    if (!first_name || !last_name || !email_id || !phone_no || !course_name || !message) {
-      return new Response(JSON.stringify({ error: 'Missing required fields' }), {
-        status: 400,
-        headers: { 'Content-Type': 'application/json' },
-      });
+    if (!result.success) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: "Please check the form details.",
+          errors: result.error.flatten().fieldErrors,
+        },
+        { status: 400 }
+      );
     }
 
-    // 1. Save in DB
-    const saved = await prisma.user_info.create({
-      data: {
-        first_name,
-        last_name,
-        email_id,
-        phone_no,
-        course_name,
-        message,
+    const {
+      name,
+      phone,
+      email,
+      service,
+      message,
+    } = result.data;
+
+    if (
+      !process.env.SMTP_HOST ||
+      !process.env.SMTP_USER ||
+      !process.env.SMTP_PASSWORD ||
+      !process.env.CONTACT_EMAIL
+    ) {
+      console.error("SMTP configuration is missing.");
+
+      return NextResponse.json(
+        {
+          success: false,
+          message: "Email service is not configured.",
+        },
+        { status: 500 }
+      );
+    }
+
+    const transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST,
+      port: Number(process.env.SMTP_PORT) || 465,
+      secure: Number(process.env.SMTP_PORT) === 465,
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASSWORD,
       },
     });
 
-    // 2. Send email
-    await resend.emails.send({
-      from: 'KP Automation <info@kpautomation.co.in>', 
-      to: process.env.NOTIFY_EMAIL!,
-      subject:  `New Contact Form Submission: ${first_name} ${last_name}`,
+    await transporter.sendMail({
+      from: `"KP Automation Website Lead" <${process.env.SMTP_USER}>`,
+      to: process.env.CONTACT_EMAIL,
+      replyTo: email,
+      subject: `New Enquiry From— ${name}`,
+
+      text: `
+        New enquiry received from KP Automation website.
+
+        Name: ${name}
+        Phone: ${phone}
+        Email: ${email}
+        Service: ${service}
+
+        Message:
+        ${message}
+      `,
+
       html: `
-        <h2>New User Request</h2>
-        <p><strong>Name:</strong> ${first_name} ${last_name}</p>
-        <p><strong>Email:</strong> ${email_id}</p>
-        <p><strong>Phone:</strong> ${phone_no}</p>
-        <p><strong>Course:</strong> ${course_name}</p>
-        <p><strong>Message:</strong><br/>${message}</p>
+        <div style="font-family:Arial,sans-serif;max-width:650px;margin:auto">
+
+          <div style="
+            background:#FF3131;
+            color:#ffffff;
+            padding:24px;
+            border-radius:8px 8px 0 0;
+          ">
+            <h2 style="margin:0">
+              New Enquiry Received for - ${service} 
+            </h2>
+
+            <p style="margin:8px 0 0">
+              KP Automation
+            </p>
+          </div>
+
+          <div style="
+            padding:24px;
+            border:1px solid #e5e7eb;
+          ">
+
+            <table
+              width="100%"
+              cellpadding="8"
+              cellspacing="0"
+              style="border-collapse:collapse"
+            >
+              <tr>
+                <td><strong>Name</strong></td>
+                <td>${name}</td>
+              </tr>
+
+              <tr>
+                <td><strong>Phone</strong></td>
+                <td>${phone}</td>
+              </tr>
+
+              <tr>
+                <td><strong>Email</strong></td>
+                <td>${email}</td>
+              </tr>
+
+              <tr>
+                <td><strong>Service</strong></td>
+                <td>${service}</td>
+              </tr>
+            </table>
+
+            <hr style="
+              margin:24px 0;
+              border:none;
+              border-top:1px solid #e5e7eb;
+            " />
+
+            <h3>Message</h3>
+
+            <p style="
+              color:#4b5563;
+              line-height:1.7;
+              white-space:pre-line;
+            ">
+              ${message}
+            </p>
+
+          </div>
+
+          <div style="
+            padding:15px;
+            text-align:center;
+            color:#6b7280;
+            font-size:13px;
+          ">
+            Submitted from kpautomation.co.in
+          </div>
+
+        </div>
       `,
     });
 
-    // 3. Return success response
-    await resend.emails.send({
-      from: process.env.RESEND_FROM_EMAIL!,
-      to: email_id, // user email from form
-      subject: 'Thank you for contacting KP Automation',
-      html: `
-        <p>Dear ${first_name},</p>
-        <p>Thank you for contacting KP Automation. We have received your message and will get back to you shortly.</p>
-        <br/>
-        <p>Best regards,<br/>Team KP Automation</p>
-      `,
-    });
-
-    return new Response(JSON.stringify({ success: true, saved }), {
-      status: 200,
-      headers: {
-        'Content-Type': 'application/json',
+    return NextResponse.json(
+      {
+        success: true,
+        message: "Enquiry sent successfully.",
       },
-    });
-
+      { status: 200 }
+    );
   } catch (error) {
-    console.error('Contact API Error:', error);
-    return new Response(JSON.stringify({ error: 'Internal Server Error' }), {
-      status: 500,
-      headers: {
-        'Content-Type': 'application/json',
+    console.error("Contact API error:", error);
+
+    return NextResponse.json(
+      {
+        success: false,
+        message: "Unable to send enquiry. Please try again later.",
       },
-    });
+      { status: 500 }
+    );
   }
 }

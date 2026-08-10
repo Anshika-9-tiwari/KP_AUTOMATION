@@ -30,7 +30,7 @@ export const industries = [
     image: "/industry.jpg",
   },
   {
-    title: "Water Treatment",
+    title: "Water Management",
     icon: Droplets,
     image: "/icecream-food.jpg",
   },

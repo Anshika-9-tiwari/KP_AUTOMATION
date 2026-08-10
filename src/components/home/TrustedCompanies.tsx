@@ -5,9 +5,32 @@ import Slider from "react-slick";
 
 import SectionHeader from "@/components/common/SectionHeader";
 import Container from "@/components/common/Container";
-import { companies } from "@/data/companies";
+
+ const companies = [
+  {
+    name: "Kalpa Turu",
+    logo: "/clients/kalpaturu.png",
+  },
+  {
+    name: "MG Motors",
+    logo: "/clients/mgmotor.png",
+  },
+  {
+    name: "ABB",
+    logo: "/aumation/image_1.png",
+  },
+  {
+    name: "RKD Group",
+    logo: "/clients/rkdgroup.png",
+  },
+  {
+    name: "Siemens",
+    logo: "/aumation/image_1.png",
+  },
+];
 
 export default function TrustedCompanies() {
+
   const settings = {
     infinite: true,
     arrows: false,
@@ -17,7 +40,7 @@ export default function TrustedCompanies() {
     speed: 3500,
     cssEase: "linear",
     pauseOnHover: true,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
 
     responsive: [
@@ -50,6 +73,7 @@ export default function TrustedCompanies() {
           title="Trusted by Leading"
           highlight="Industrial Brands"
           description="Delivering reliable industrial automation solutions and corporate training for leading manufacturing companies."
+          className="mb-14"
         />
 
         <Slider {...settings}>

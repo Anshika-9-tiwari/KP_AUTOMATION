@@ -26,13 +26,15 @@ const heroFormSchema = z.object({
 type HeroFormValues = z.infer<typeof heroFormSchema>;
 
 const services = [
+  "Corporate Training",
   "PLC Programming",
   "SCADA & HMI",
   "Industrial Automation",
   "Machine Vision",
-  "IIOT Solutions",
+  "IIOT Gateway",
   "Automation Consultancy",
-  "Corporate Training",
+  "Control Panels",
+ 
 ];
 
 export default function HeroForm() {
@@ -163,7 +165,7 @@ export default function HeroForm() {
               defaultValue=""
             >
               <option value="" disabled>
-                Select Service
+                Select Service & Corporate Training
               </option>
 
               {services.map((service) => (

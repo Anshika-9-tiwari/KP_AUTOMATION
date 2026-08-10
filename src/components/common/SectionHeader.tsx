@@ -20,7 +20,7 @@ export default function SectionHeader({
   return (
     <div
       className={clsx(
-        "mb-14 max-w-3xl",
+        "mb-9 max-w-4xl",
         align === "center" ? "mx-auto text-center" : "text-left",
         className
       )}
