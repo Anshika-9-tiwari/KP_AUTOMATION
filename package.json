@@ -4,11 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "prisma generate && prisma migrate deploy && next build",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "postinstall": "prisma generate",
-    "postbuild": "next-sitemap"
+    "lint": "eslint",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

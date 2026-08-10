@@ -88,7 +88,7 @@ export default function DesktopNav({
         ))}
       </ul>
 
-      <PrimaryButton href="/contact">
+      <PrimaryButton href="/contact#contact-form">
         Get Free Consultation
       </PrimaryButton>
     </div>

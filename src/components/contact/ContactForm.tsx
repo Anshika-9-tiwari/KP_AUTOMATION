@@ -64,7 +64,7 @@ export default function ContactForm() {
         Send An Enquiry
       </span>
 
-      <h2 className="mt-2 text-3xl font-bold text-[var(--heading)]">
+      <h2 className="mt-3 text-3xl font-bold text-[var(--heading)]">
         Tell Us About Your Requirement
       </h2>
 
@@ -104,7 +104,7 @@ export default function ContactForm() {
               {...register("name")}
               type="text"
               placeholder="Your name"
-              className={`input input-bordered w-full bg-white focus:outline-none ${
+              className={`input input-bordered border border-red-50 rounded-xl w-full bg-white focus:outline-none ${
                 errors.name
                   ? "border-error"
                   : "focus:border-primary"
@@ -127,7 +127,7 @@ export default function ContactForm() {
               {...register("phone")}
               type="tel"
               placeholder="+91 XXXXX XXXXX"
-              className={`input input-bordered w-full bg-white focus:outline-none ${
+              className={`input input-bordered border border-red-50 rounded-xl w-full bg-white focus:outline-none ${
                 errors.phone
                   ? "border-error"
                   : "focus:border-primary"
@@ -153,7 +153,7 @@ export default function ContactForm() {
             {...register("email")}
             type="email"
             placeholder="john@example.com"
-            className={`input input-bordered w-full bg-white focus:outline-none ${
+            className={`input input-bordered border border-red-50 rounded-xl w-full bg-white focus:outline-none ${
               errors.email
                 ? "border-error"
                 : "focus:border-primary"
@@ -176,7 +176,7 @@ export default function ContactForm() {
 
           <select
             {...register("service")}
-            className={`select select-bordered w-full bg-white focus:outline-none ${
+            className={`select select-bordered border border-red-50 rounded-xl w-full bg-white focus:outline-none ${
               errors.service
                 ? "border-error"
                 : "focus:border-primary"
@@ -233,7 +233,7 @@ export default function ContactForm() {
             {...register("message")}
             rows={3}
             placeholder="Tell us about your project or requirement..."
-            className={`textarea textarea-bordered w-full resize-none bg-white focus:outline-none ${
+            className={`textarea textarea-bordered border border-red-50 rounded-xl w-full resize-none bg-white focus:outline-none ${
               errors.message
                 ? "border-error"
                 : "focus:border-primary"
@@ -252,7 +252,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="btn w-full border-0 bg-primary text-white hover:bg-[var(--primary-hover)] disabled:opacity-60"
+          className="btn mt-5 w-full border-0 bg-primary text-white hover:bg-[var(--primary-hover)] disabled:opacity-60 rounded-md"
         >
           {isSubmitting ? (
             <>
