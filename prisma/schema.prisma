@@ -1,19 +1,25 @@
 generator client {
-  provider = "prisma-client-js"
+  provider = "prisma-client"
+  output   = "../generated/prisma"
 }
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
 }
 
-model user_info {
-  id          Int      @id @default(autoincrement())
-  first_name  String   @db.VarChar(100)
-  last_name   String   @db.VarChar(100)
-  email_id    String   @unique @db.VarChar(150)
-  phone_no    String   @db.VarChar(20)
-  course_name String   @db.VarChar(100)
-  message     String   @db.Text
-  createdAt   DateTime @default(now())
+model ContactEnquiry {
+  id        String   @id @default(cuid())
+  name      String
+  phone     String
+  email     String
+  service   String
+  message   String
+  status    String   @default("NEW")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([email])
+  @@index([service])
+  @@index([status])
+  @@index([createdAt])
 }

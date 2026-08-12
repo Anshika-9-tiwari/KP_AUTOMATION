@@ -1,9 +1,17 @@
-"use client";
 
-export default function Home() {
+import Services from "@/components/home/Services";
+import Testimonials from "@/components/home/Testimonials";
+import ServicesHero from "@/components/services/ServiceHero";
+import ServicesProcess from "@/components/services/ServicesProcess";
+import WhyServices from "@/components/services/WhyServices";
+
+export default function ServicesPage() {
   return (
-    <main className="bg-base-100 h-screen text-blue-800">
-        Comming Soon
-    </main>
+    <>
+      <ServicesHero />
+      <Services/>
+      <WhyServices />
+      <ServicesProcess/>
+    </>
   );
 }

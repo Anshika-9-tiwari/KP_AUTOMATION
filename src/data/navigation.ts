@@ -25,6 +25,10 @@ export const navigation: NavItem[] = [
     href: "#",
     children: [
       {
+        label: "All Courses",
+        href: "/corporate-training",
+      },
+      {
         label: "PLC Training",
         href: "/corporate-training/plc-training",
       },

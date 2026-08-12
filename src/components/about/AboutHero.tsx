@@ -40,14 +40,14 @@ export default function AboutHero() {
           </h1>
 
           {/* Description */}
-          <p className="mt-8 max-w-2xl text-lg leading-8 text-white/80">
+          <p className="mt-10 max-w-2xl text-lg leading-8 text-white/80">
             KP Automation delivers industrial automation and smart
             manufacturing solutions that help businesses improve
             productivity, reliability and operational efficiency.
           </p>
 
           {/* Buttons */}
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-12 flex flex-wrap gap-4">
             <PrimaryButton href="/services">
               Explore Our Services
             </PrimaryButton>
