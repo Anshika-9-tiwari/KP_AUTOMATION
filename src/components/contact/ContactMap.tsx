@@ -10,7 +10,7 @@ const mapUrl =
 
 export default function ContactMap() {
   return (
-    <section className="bg-base-100 py-22">
+    <section className="bg-base-100 py-18">
       <Container>
         <div className="grid overflow-hidden rounded-3xl border border-base-300 bg-base-200 lg:grid-cols-2">
 

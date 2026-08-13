@@ -9,7 +9,7 @@ export default function TrainingPrograms() {
   return (
     <section
       id="training-programs"
-      className="bg-base-100 py-24"
+      className="bg-base-100 py-20"
     >
       <Container>
         <SectionHeader

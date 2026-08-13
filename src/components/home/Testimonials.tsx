@@ -41,7 +41,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="bg-base-100 py-22">
+    <section className="bg-base-100 py-20">
       <Container>
         <SectionHeader
           badge="Testimonials"

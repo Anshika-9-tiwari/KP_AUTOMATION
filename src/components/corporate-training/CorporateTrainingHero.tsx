@@ -30,16 +30,15 @@ export default function CorporateTrainingHero() {
             <span className="text-primary"> Automation Skills</span>
           </h1>
 
-          <p className="mt-8 max-w-2xl text-lg leading-8 text-white/80">
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80">
             Industry-focused training programs designed to develop
             practical skills in PLC, SCADA, HMI, drives, instrumentation,
             networking and modern industrial automation.
           </p>
 
-          <div className="mt-12 flex flex-wrap gap-4">
+          <div className="mt-10 flex flex-wrap gap-4">
             <PrimaryButton href="#training-programs">
               Explore Training
-              <ArrowRight size={18} />
             </PrimaryButton>
 
             <SecondaryButton href="/contact">

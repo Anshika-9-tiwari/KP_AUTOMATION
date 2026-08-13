@@ -8,8 +8,8 @@ export default function ContactPage() {
     <>
       <ContactHero />
 
-      <section className="bg-base-200 py-24">
-        <div className="container mx-auto px-6 lg:px-10">
+      <section className="bg-base-200 py-18">
+        <div className="container mx-auto px-6 lg:px-12">
           <div className="grid items-start gap-14 lg:grid-cols-2">
             <ContactInfo />
             <ContactForm />

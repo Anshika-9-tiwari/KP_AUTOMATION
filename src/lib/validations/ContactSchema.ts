@@ -20,10 +20,9 @@ export const contactSchema = z.object({
     .string()
     .min(1, "Please select a service"),
 
-  message: z
+   message: z
     .string()
-    .min(10, "Please tell us a little more about your requirement")
-    .max(2000, "Message is too long"),
+    .optional(),
 });
 
 export type ContactFormData = z.infer<typeof contactSchema>;

@@ -66,7 +66,7 @@ export default function TrustedCompanies() {
   };
 
   return (
-    <section className="bg-base-100 py-20">
+    <section className="bg-base-100 py-18">
       <Container>
         <SectionHeader
           badge="Trusted Companies"

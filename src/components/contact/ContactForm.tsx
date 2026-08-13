@@ -58,7 +58,7 @@ export default function ContactForm() {
   return (
     <div
       id="contact-form"
-      className="rounded-3xl border border-base-300 bg-white p-7 shadow-xl lg:p-9"
+      className="rounded-3xl border border-base-300 bg-white p-7 shadow-xl lg:p-10"
     >
       <span className="text-sm font-semibold uppercase tracking-wider text-primary">
         Send An Enquiry

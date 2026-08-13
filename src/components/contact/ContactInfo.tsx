@@ -11,12 +11,12 @@ import Link from "next/link";
 
 export default function ContactInfo() {
   return (
-    <div>
+    <div >
       <span className="inline-flex rounded-full border border-primary/20 bg-primary/10 px-6 py-2 text-sm font-semibold text-primary">
         Get In Touch
       </span>
 
-      <h2 className="mt-5 font-serif text-4xl font-bold leading-tight text-[var(--heading)] lg:text-5xl">
+      <h2 className="mt-5 font-serif text-4xl font-bold leading-[1.2] text-[var(--heading)] lg:text-5xl">
         Let's Discuss Your
         <br />
         <span className="text-primary">Automation Needs</span>

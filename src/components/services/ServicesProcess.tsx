@@ -49,7 +49,7 @@ const steps = [
 
 export default function ServicesProcess() {
   return (
-    <section className="bg-base-100 py-24" id="our-process">
+    <section className="bg-base-100 py-20" id="our-process">
       <Container>
         <SectionHeader
           badge="Our Process"

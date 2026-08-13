@@ -16,7 +16,7 @@ const highlights = [
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[720px] lg:min-h-[680px] flex items-center overflow-hidden py-14 lg:py-16">
+    <section className="relative min-h-[720px] lg:min-h-[680px] flex items-center overflow-hidden py-20">
   
       {/* Background Video */}
 
@@ -38,11 +38,11 @@ export default function Hero() {
       {/* Additional Left Overlay */}
       {/* <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/60 to-black/40" /> */}
 
-      <Container className="relative z-10 pt-18 lg:pt-22">
+      <Container className="relative z-10 pt-18 md:pt-20">
         <div className="grid items-center gap-14 lg:grid-cols-5">
           {/* Left */}
 
-          <div className="space-y-6 text-white lg:col-span-3">
+          <div className="space-y-5 text-white lg:col-span-3">
 
             {/* Badge */}
 

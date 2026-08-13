@@ -39,7 +39,7 @@ const benefits = [
 
 export default function WhyServices() {
   return (
-    <section className="bg-base-200 py-22">
+    <section className="bg-base-200 py-20">
       <Container>
         <SectionHeader
           badge="Why Our Services"

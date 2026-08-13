@@ -75,7 +75,7 @@ export default function MobileNav() {
                     onClick={() => setOpen(false)}
                     className={`block rounded-xl px-4 py-3 transition-colors duration-300 ${
                       pathname === item.href
-                        ? "bg-info text-white"
+                        ? "bg-primary text-white"
                         : "hover:bg-info/10 hover:text-info"
                     }`}
                   >

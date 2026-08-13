@@ -15,7 +15,7 @@ const points = [
 
 export default function WhoWeAre() {
   return (
-    <section className="bg-base-100 py-22">
+    <section className="bg-base-100 py-20">
       <Container>
         <div className="grid items-center gap-14 lg:grid-cols-2">
 
