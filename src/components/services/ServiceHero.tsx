@@ -26,7 +26,7 @@ export default function ServicesHero() {
 
           {/* Badge */}
           <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-5 py-2 text-sm font-medium backdrop-blur-md">
-            <Settings2 size={17} className="text-primary" />
+            <Settings2 size={17} className="text-white" />
             Industrial Automation Services
           </span>
 

@@ -51,7 +51,7 @@ const steps = [
 
 export default function OurApproach() {
   return (
-    <section className="bg-base-200 py-20">
+    <section className="bg-base-100 py-20">
       <Container>
         <SectionHeader
           badge="Our Approach"

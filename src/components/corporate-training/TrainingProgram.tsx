@@ -14,8 +14,8 @@ export default function TrainingPrograms() {
       <Container>
         <SectionHeader
           badge="Training Programs"
-          title="Learn Automation"
-          highlight="Through Practice"
+          title="Learn Automation Through"
+          highlight="Practice"
           description="Our training programs are designed around practical industrial applications, helping professionals and teams build skills they can apply directly in real-world automation environments."
         />
 

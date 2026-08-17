@@ -15,6 +15,7 @@ export const services = [
     title: "PLC Programming",
     icon: Cpu,
     href: "/services/plc-programming",
+    overviewImage: "/aumation/plc-program.jpg",
 
     description:
       "Reliable PLC programming and control solutions designed to automate machines, production lines and industrial processes.",
@@ -55,6 +56,7 @@ export const services = [
     title: "SCADA & HMI",
     icon: MonitorCog,
     href: "/services/scada-hmi",
+    overviewImage: "/aumation/scada.jpg",
 
     description:
       "Modern SCADA and HMI solutions that provide real-time monitoring, visualization, control and production insights.",
@@ -95,6 +97,7 @@ export const services = [
     title: "Industrial Automation",
     icon: Factory,
     href: "/services/industrial-automation",
+    overviewImage: "/aumation/industry-bg.jpg",
 
     description:
       "Complete industrial automation solutions that improve productivity, process reliability and operational efficiency.",
@@ -135,6 +138,7 @@ export const services = [
     title: "Control Panels",
     icon: PanelTop,
     href: "/services/control-panels",
+    overviewImage: "/controlpanel.jpeg",
 
     description:
       "Industrial control panel engineering and integration designed for safe, organized and reliable automation systems.",
@@ -175,6 +179,7 @@ export const services = [
     title: "Machine Vision",
     icon: ScanLine,
     href: "/services/machine-vision",
+    overviewImage: "/energy.webp",
 
     description:
       "Automated machine vision solutions for inspection, measurement, identification and quality control.",
@@ -212,12 +217,13 @@ export const services = [
 
   {
     slug: "iiot",
-    title: "IIoT Solutions",
+    title: "IIoT Solutions & Dashboards",
     icon: Wifi,
     href: "/services/iiot",
+    overviewImage: "/dashboard.jpeg",
 
     description:
-      "Industrial IoT solutions that connect machines, collect production data and enable real-time monitoring and analytics.",
+      "Industrial IoT solutions that connect machines, collect production data and enable real-time dashboard monitoring and analytics.",
 
     overview:
       "We help industries connect machines and automation systems to create smarter, data-driven operations. Our IIoT solutions collect equipment and production data and make it available for monitoring, analytics and informed decision-making.",
@@ -255,6 +261,7 @@ export const services = [
     title: "Automation Consultancy",
     icon: Lightbulb,
     href: "/services/automation-consultancy",
+    overviewImage: "/industrial-automation.png",
 
     description:
       "Engineering consultancy to identify automation opportunities and develop practical technology strategies for your industry.",

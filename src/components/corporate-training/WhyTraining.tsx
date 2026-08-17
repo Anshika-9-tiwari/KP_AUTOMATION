@@ -37,7 +37,7 @@ const benefits = [
 
 export default function WhyTraining() {
   return (
-    <section className="bg-base-200 py-20">
+    <section className="bg-base-100 py-20">
       <Container>
         <SectionHeader
           badge="Why KP Automation"

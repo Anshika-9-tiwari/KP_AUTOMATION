@@ -11,8 +11,8 @@ export default function AboutPage() {
       <AboutHero />
       <WhoWeAre />
       <OurExpertise />
-      <WhyKPAutomation />
       <OurApproach />
+      <WhyKPAutomation />
       <AboutCTA/>
     </>
   );

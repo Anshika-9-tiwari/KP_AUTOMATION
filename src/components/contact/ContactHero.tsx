@@ -12,17 +12,17 @@ export default function ContactHero() {
     <section className="relative flex min-h-[480px] items-center overflow-hidden py-20">
       {/* Background */}
       <Image
-        src="/red_blackbg.png"
+        src="/bg2.jpeg"
         alt="KP Automation Industrial Automation"
         fill
         priority
-        className="object-cover object-center"
+        className="object-center"
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-white/5 " />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/60 to-black/70 " />
 
-      <Container className="relative z-10 pt-22">
+      <Container className="relative z-10 pt-20 md:pt-24">
         <div className="max-w-3xl text-white">
 
           {/* Badge */}
@@ -32,7 +32,7 @@ export default function ContactHero() {
           </span>
 
           {/* Heading */}
-          <h1 className="mt-8 font-serif text-5xl font-bold leading-[1.1] tracking-tight lg:text-6xl">
+          <h1 className="mt-10 font-serif text-5xl font-bold leading-[1.1] tracking-tight lg:text-6xl">
             Let's Build Your
             <br />
             <span>

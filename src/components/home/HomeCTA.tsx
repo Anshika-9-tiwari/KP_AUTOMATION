@@ -7,7 +7,7 @@ import SecondaryButton from "@/components/common/SecondaryButton";
 
 export default function HomeCTA() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-primary to-[#E12727] py-16">
+    <section className="relative overflow-hidden bg-gradient-to-b from-primary to-[#E12727] py-14">
       {/* Background Pattern */}
        <div className="absolute inset-0 bg-black/20" />
 

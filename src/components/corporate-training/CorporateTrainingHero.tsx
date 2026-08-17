@@ -7,7 +7,7 @@ import SecondaryButton from "@/components/common/SecondaryButton";
 
 export default function CorporateTrainingHero() {
   return (
-    <section className="relative flex min-h-[560px] items-center overflow-hidden py-20">
+    <section className="relative flex min-h-[560px] items-center overflow-hidden py-16 md:py-18">
       <Image
         src="/certificate.jpeg"
         alt="Industrial Automation Corporate Training"
@@ -16,12 +16,12 @@ export default function CorporateTrainingHero() {
         className="object-cover object-center"
       />
 
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-black/50" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-black/65" />
 
-      <Container className="relative z-10 pt-20">
+      <Container className="relative z-10 pt-20 md:pt-24">
         <div className="max-w-3xl text-white">
           <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-5 py-2 text-sm font-medium backdrop-blur-md">
-            <GraduationCap size={18} className="text-primary" />
+            <GraduationCap size={18} className="text-white/80" />
             Industrial Automation Training
           </span>
 

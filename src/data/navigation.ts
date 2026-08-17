@@ -28,6 +28,10 @@ export const navigation: NavItem[] = [
         label: "All Courses",
         href: "/corporate-training",
       },
+       {
+        label: "Industrial Automation",
+        href: "/corporate-training/industrial-automation-training",
+      },
       {
         label: "PLC Training",
         href: "/corporate-training/plc-training",
@@ -37,16 +41,12 @@ export const navigation: NavItem[] = [
         href: "/corporate-training/scada-and-hmi",
       },
       {
-        label: "Servo Motor",
-        href: "/corporate-training/servo-motor",
+        label: "Drives Motors",
+        href: "/corporate-training/drives-motors",
       },
       {
-        label: "Instrumentation",
-        href: "/corporate-training/instrumentation",
-      },
-      {
-        label: "Industrial Automation",
-        href: "/corporate-training/industrial-automation",
+        label: "Process Instrumentation",
+        href: "/corporate-training/process-instrumentation",
       },
     ],
   },

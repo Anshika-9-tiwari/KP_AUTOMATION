@@ -16,6 +16,7 @@ interface Service {
   overview: string;
   href: string;
   icon: React.ElementType;
+  overviewImage: string;
   features: string[];
   applications: string[];
   technologies: string[];
@@ -31,11 +32,20 @@ export default function ServiceDetail({ service }: Props) {
   return (
     <>
       <section className="relative overflow-hidden bg-neutral py-18">
-        <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/25 to-black/20" />
+        <Image
+          src="/bg3.jpeg"
+          alt="KP Automation Industrial Automation"
+          fill
+          priority
+          className="object-center"
+        />
+  
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/70 to-black/75 " />
 
-        <Container className="relative z-10 pt-22">
+        <Container className="relative z-10 pt-20 md:pt-24">
           <div className="max-w-4xl text-white">
-            <div className="flex items-center gap-2 text-sm text-white/60">
+            <div className="flex items-center gap-2 text-sm text-white/75">
               <Link
                 href="/services"
                 className="transition hover:text-primary"
@@ -48,11 +58,11 @@ export default function ServiceDetail({ service }: Props) {
               <span>{service.title}</span>
             </div>
 
-            <div className="mt-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+            <div className="mt-10 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/20 text-white/80">
               <Icon size={30} />
             </div>
 
-            <h1 className="mt-7 max-w-4xl font-serif text-5xl font-bold leading-tight lg:text-6xl">
+            <h1 className="mt-8 max-w-4xl font-serif text-5xl font-bold leading-tight lg:text-6xl">
               {service.title}
             </h1>
 
@@ -60,7 +70,7 @@ export default function ServiceDetail({ service }: Props) {
               {service.description}
             </p>
 
-            <div className="mt-8">
+            <div className="mt-10">
               <PrimaryButton href="/contact">
                 Discuss Your Requirement
               </PrimaryButton>
@@ -74,10 +84,10 @@ export default function ServiceDetail({ service }: Props) {
           <div className="grid items-center gap-14 lg:grid-cols-2">
             <div className="relative h-[420px] overflow-hidden rounded-3xl">
               <Image
-                src="/industry.jpg"
-                alt={service.title}
+                src={service.overviewImage}
+                alt={`${service.title} - KP Automation`}
                 fill
-                className="object-cover"
+                className="object-cover transition-transform duration-500 hover:scale-105"
               />
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
@@ -88,7 +98,7 @@ export default function ServiceDetail({ service }: Props) {
                 </p>
 
                 <p className="mt-1 font-semibold">
-                  Industrial Automation Solutions
+                  {service.title}
                 </p>
               </div>
             </div>

@@ -54,7 +54,7 @@ const strengths = [
 
 export default function WhyKPAutomation() {
   return (
-    <section className="bg-base-100 py-20">
+    <section className="bg-base-200 py-20">
       <Container>
         <div className="grid items-center gap-14 lg:grid-cols-2">
           {/* Image */}
