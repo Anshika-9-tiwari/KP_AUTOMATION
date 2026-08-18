@@ -153,6 +153,7 @@ export default function ContactForm() {
             {...register("email")}
             type="email"
             placeholder="john@example.com"
+            required
             className={`input input-bordered border border-red-50 rounded-xl w-full bg-white focus:outline-none ${
               errors.email
                 ? "border-error"

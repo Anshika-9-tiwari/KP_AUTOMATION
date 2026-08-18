@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import {
   ArrowRight,
@@ -42,7 +43,7 @@ interface Props {
 export default function TrainingDetail({ training }: Props) {
   return (
     <>
-      <section className="relative min-h-[680px] overflow-hidden py-16 md:py-18">
+      <section className="relative min-h-[680px] overflow-hidden py-16 md:py-16">
         <Image
           src="/bg2.jpeg"
           alt={training.title}
@@ -51,7 +52,7 @@ export default function TrainingDetail({ training }: Props) {
           className="object-center "
         />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/70 to-black/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/60 to-black/50" />
 
         <Container className="relative z-10 pt-20 md:pt-22">
           <div className="grid items-center gap-12 lg:grid-cols-6">

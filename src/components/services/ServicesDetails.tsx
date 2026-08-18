@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -41,7 +42,7 @@ export default function ServiceDetail({ service }: Props) {
         />
   
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/70 to-black/75 " />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/60 to-black/65 " />
 
         <Container className="relative z-10 pt-20 md:pt-24">
           <div className="max-w-4xl text-white">
@@ -58,7 +59,7 @@ export default function ServiceDetail({ service }: Props) {
               <span>{service.title}</span>
             </div>
 
-            <div className="mt-10 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/20 text-white/80">
+            <div className="mt-10 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/30 text-white/90">
               <Icon size={30} />
             </div>
 

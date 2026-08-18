@@ -20,7 +20,7 @@ export default function ContactHero() {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/60 to-black/70 " />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/50 to-black/60 " />
 
       <Container className="relative z-10 pt-20 md:pt-24">
         <div className="max-w-3xl text-white">

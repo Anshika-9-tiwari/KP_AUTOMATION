@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import { ArrowRight, GraduationCap } from "lucide-react";
 
@@ -16,7 +17,7 @@ export default function CorporateTrainingHero() {
         className="object-cover object-center"
       />
 
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-black/65" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/60 to-black/50" />
 
       <Container className="relative z-10 pt-20 md:pt-24">
         <div className="max-w-3xl text-white">

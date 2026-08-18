@@ -6,6 +6,7 @@ import {
   User,
   Phone,
   BriefcaseBusiness,
+  Mail,
 } from "lucide-react";
 
 import PrimaryButton from "@/components/common/PrimaryButton";
@@ -131,6 +132,28 @@ export default function TrainingEnquiryForm({
           )}
         </div>
 
+        <div>
+          <label className="input input-bordered flex items-center gap-3 rounded-xl border border-slate-200">
+            <Mail
+              size={18}
+              className="shrink-0 text-primary"
+            />
+
+            <input
+              {...register("email")}
+              type="email"
+              placeholder="Email Address"
+              className="grow"
+            />
+          </label>
+
+          {errors.email && (
+            <p className="mt-1 text-xs text-error">
+              {errors.email.message}
+            </p>
+          )}
+        </div>
+        
         <div>
           <label className="input input-bordered flex items-center gap-3 rounded-xl border border-slate-200">
             <Phone

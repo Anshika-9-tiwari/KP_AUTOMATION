@@ -19,7 +19,7 @@ export default function ServicesHero() {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/75 to-black/60" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/65 to-black/55" />
 
       <Container className="relative z-10 pt-20">
         <div className="max-w-3xl text-white">
