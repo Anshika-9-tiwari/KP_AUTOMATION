@@ -1,8 +1,7 @@
-'use client'
+
 import Image from "next/image";
 import {
   ArrowRight,
-  CheckCircle2,
   Factory,
   Users,
   Wrench,
