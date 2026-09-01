@@ -22,7 +22,7 @@ export const navigation: NavItem[] = [
   },
   {
     label: "Corporate Training",
-    href: "#",
+    href: "corporate-training",
     children: [
       {
         label: "All Courses",
@@ -52,18 +52,18 @@ export const navigation: NavItem[] = [
   },
   {
     label: "Industries",
-    href: "#",
+    href: "industries",
     children: [
       {
         label: "Manufacturing",
         href: "/industries/manufacturing",
       },
       {
-        label: "Automobile",
-        href: "/industries/automobile",
+        label: "Automotive Industry",
+        href: "/industries/automotive",
       },
       {
-        label: "Steel",
+        label: "Steel Industry",
         href: "/industries/steel",
       },
       {
@@ -79,7 +79,7 @@ export const navigation: NavItem[] = [
         href: "/industries/oil-gas",
       },
       {
-        label: "Packaging",
+        label: "Packaging Industry",
         href: "/industries/packaging",
       },
     ],

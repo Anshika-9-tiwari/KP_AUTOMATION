@@ -5,7 +5,7 @@ import SectionHeader from "@/components/common/SectionHeader";
 
 import IndustryCard from "./IndustryCard";
 
-import { industries } from "@/data/industries";
+import { homeindustries } from "@/data/industries";
 
 export default function Industries() {
   return (
@@ -22,10 +22,12 @@ export default function Industries() {
 
         <div className="mt-15 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
 
-          {industries.map((industry) => (
+          {homeindustries.map((industry) => (
             <IndustryCard
-              href={""} key={industry.title}
-              {...industry}/>
+              key={industry.title}
+              {...industry}
+              href={industry.href ?? ""}
+            />
           ))}
 
         </div>

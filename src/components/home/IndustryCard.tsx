@@ -15,7 +15,7 @@ export default function IndustryCard({
   title,
   image,
   icon: Icon,
-  href = "/industries",
+  href,
 }: Props) {
   return (
     <div className="group relative h-80 overflow-hidden rounded-3xl">

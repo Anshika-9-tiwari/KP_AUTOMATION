@@ -93,15 +93,10 @@ export default function WhyChoose() {
             })}
           </div>
 
-          {/* Center Image */}
+          {/* Center vdo */}
 
           <div className="relative h-[520px] overflow-hidden rounded-3xl">
-            {/* <Image
-              src="/people.png"
-              alt="Why Choose KP Automation"
-              fill
-              className="object-cover"
-            /> */}
+        
             <video
               autoPlay
               muted

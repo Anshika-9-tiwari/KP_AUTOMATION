@@ -1,9 +1,11 @@
-"use client";
+import ProductHero from "@/components/products/ProductHero";
 
-export default function Home() {
+export default function ProductsPage() {
   return (
-    <main className="bg-base-100 h-screen text-blue-800">
-        Comming Soon
-    </main>
+    <>
+      <ProductHero />
+
+      {/* Product sections will be added here */}
+    </>
   );
 }

@@ -16,7 +16,7 @@ const quickLinks = [
   { label: "About Us", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Products", href: "/products" },
-  { label: "Industries", href: "#industries" },
+  { label: "Industries", href: "/industries" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -39,16 +39,20 @@ const services = [
   },
   {
     label: "IIOT Solutions",
-    href: "/services/iiot-solutions",
+    href: "/services/iiot",
+  },
+  {
+    label: "Control Panels",
+    href: "/services/control-panels",
   },
 ];
 
 const trainings = [
-  { label: "Industrial Automation", href: "/corporate-training/industrial-automation"},
+  { label: "Industrial Automation", href: "/corporate-training/industrial-automation-training"},
   { label: "PLC Training", href: "/corporate-training/plc-training"},
-  { label: "SCADA & HMI Training", href: "/corporate-training/scada-training"},
-  { label: "Servo Systems", href: "/corporate-training/servo-systems"},
-  { label: "Instrumentation", href: "/corporate-training/instrumentation"},
+  { label: "SCADA & HMI Training", href: "/corporate-training/scada-and-hmi"},
+  { label: "Drives & Motors", href: "/corporate-training/drives-motors"},
+  { label: "Process Instrumentation", href: "/corporate-training/process-instrumentation"},
 ];
 
 export default function Footer() {
@@ -263,7 +267,7 @@ export default function Footer() {
                   </p>
 
                   <p className="leading-6 text-gray-400">
-                    Block-C, Village Salimar,
+                    Block-C, Village Shalimar,
                     Near Indra Park,
                     <br />
                     New Delhi – 110088, India
