@@ -20,7 +20,7 @@ export default async function IndustryPage({ params }: Props) {
 
   const industry = industries.find(
     (industry) => industry.slug === slug
-  ) as Industry | undefined;
+  );
 
   if (!industry) {
     notFound();
